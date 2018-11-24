@@ -398,7 +398,7 @@
 					<passive_effect name="BlockDamage" operation="perc_add" value=".3"/>
 				</effect_group>
 				<effect_group name="SpecialEffects"> 
-					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/LightningParticle.unity3d?LightningParticle_X" parent_transform="Attachments/Grip" local_offset="0,0,0"/>
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/sb_LightningParticle.unity3d?LightningParticle_X" parent_transform="Attachments/Grip" local_offset="0,0,0"/>
 				</effect_group>
 			</item_modifier>			
 <!-- Grip Mods  -->	
