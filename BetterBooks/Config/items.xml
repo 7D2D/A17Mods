@@ -2,8 +2,8 @@
 	
 		<append xpath="/items">	
 			<item name="bookRM01">
-				<property name="Meshfile" value="#@modfolder:Resources/Books.unity3d?BookRM01_X" /> <!-- CC 4.0 Licenced model by Anthony Yanez -->
-				<property name="HandMeshfile" value="#@modfolder:Resources/Books.unity3d?BookRM01_X"/> 
+				<property name="Meshfile" value="#@modfolder:Resources/BetterBooks.unity3d?BookRM01_X" /> <!-- CC 4.0 Licenced model by Anthony Yanez -->
+				<property name="HandMeshfile" value="#@modfolder:Resources/BetterBooks.unity3d?BookRM01_X"/> 
 				<property name="CustomIcon" value="schematicMaster" />
 				<property name="HoldType" value="21"/> 
 				<property name="Material" value="Mpaper"/>
@@ -26,8 +26,8 @@
 				</property> 
 			</item>			
 			<item name="bookWD01">
-				<property name="Meshfile" value="#@modfolder:Resources/Books.unity3d?BookWD01_X" /> <!-- CC 4.0 Licenced model by Anthony Yanez -->
-				<property name="HandMeshfile" value="#@modfolder:Resources/Books.unity3d?BookWD01_X"/> 
+				<property name="Meshfile" value="#@modfolder:Resources/BetterBooks.unity3d?BookWD01_X" /> <!-- CC 4.0 Licenced model by Anthony Yanez -->
+				<property name="HandMeshfile" value="#@modfolder:Resources/BetterBooks.unity3d?BookWD01_X"/> 
 				<property name="CustomIcon" value="schematicMaster" />
 				<property name="HoldType" value="21"/> 
 				<property name="Material" value="Mpaper"/>
