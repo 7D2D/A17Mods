@@ -1,0 +1,8 @@
+<configs>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='paintMagazines']">
+			<item name="bookRM01" prob="0.5" />
+			<item name="bookWD01" prob="0.5" />
+	</append>
+		
+</configs>

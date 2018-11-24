@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Books" />
+		<Description value="Animated Books Mod" />
+		<Author value="Xyth" />
+		<Version value="1" />
+		<Website value="http://sdxmods.com" />
+	</ModInfo>
+</xml>
