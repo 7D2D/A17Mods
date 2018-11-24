@@ -1,0 +1,127 @@
+<configs>
+	
+		<append xpath="/items">	
+			<item name="meleeWoodBat">
+				<property name="Extends" value="meleeClubWood" />
+				<property name="Tags" value="bat,woodbat,melee,weapon,meleeWeapon,shaft,grip,head,pommel,sweetspot,notbraced"/>
+				<property name="Meshfile" value="#@modfolder:Resources/salvagedbats.unity3d?PlainBat_X" /> <!-- CC 4.0 Licenced model by Gravity jack -->
+				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?PlainBat_X"/> 
+				<property name="CustomIcon" value="WoodBat" />
+				<property name="HoldType" value="2"/> 
+				<property name="Material" value="Mwood"/>
+				<effect_group name="Base Effects">
+					<passive_effect name="MaxRange" operation="base_set" value="2.5"/>
+					<passive_effect name="BlockRange" operation="base_set" value="3"/>
+					<passive_effect name="EntityDamage" operation="base_set" value="20"/> <!-- meleeClubWood -->
+					<passive_effect name="BlockDamage" operation="base_set" value="5"/>
+					<passive_effect name="AttacksPerMinute" operation="perc_add" value="0" tags="primary"/>
+					<passive_effect name="StaminaLoss" operation="base_set" value="10" tags="primary"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="70,200" tier="1,6"/>
+					<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+					<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+					<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				</effect_group>
+				<effect_group name="Power Attack">
+					<passive_effect name="EntityDamage" operation="perc_add" value="1.3" tags="secondary"/>
+					<passive_effect name="BlockDamage" operation="perc_add" value="2" tags="secondary"/>
+					<passive_effect name="AttacksPerMinute" operation="perc_add" value="0" tags="secondary"/>
+					<passive_effect name="StaminaLoss" operation="base_add" value="15" tags="secondary"/>
+					<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
+						<requirement name="RandomRoll" seed_type="Random" target="self" min_max="1,100" operation="LTE" value="50"/>
+						<requirement name="IsMale" target="self"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
+						<requirement name="RandomRoll" seed_type="Random" target="self" min_max="1,100" operation="LTE" value="50"/>
+						<requirement name="IsMale" target="self" invert="true"/>
+					</triggered_effect>
+
+					<triggered_effect trigger="onSelfSecondaryActionStart" action="AddJournalEntry" journal="powerAttackTip"/>
+				</effect_group>
+			</item>
+			<item name="meleeAluminumBat">
+				<property name="Extends" value="meleeClubWood" />
+				<property name="Tags" value="bat,alumbat,melee,weapon,meleeWeapon,shaft,grip,head,pommel,sweetspot,notbraced"/>
+				<property name="Meshfile" value="#@modfolder:Resources/salvagedbats.unity3d?AlumBat_X" /> <!-- CC 4.0 Licenced model by Gravity jack -->
+				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?AlumBat_X"/> 
+				<property name="CustomIcon" value="AlumBat" />
+				<property name="HoldType" value="2"/> 
+				<property name="Material" value="Mmetal"/>
+				<effect_group name="Base Effects">
+					<passive_effect name="MaxRange" operation="base_set" value="2.5"/>
+					<passive_effect name="BlockRange" operation="base_set" value="3"/>
+					<passive_effect name="EntityDamage" operation="base_set" value="25"/> <!-- meleeClubWood -->
+					<passive_effect name="BlockDamage" operation="base_set" value="5"/>
+					<passive_effect name="AttacksPerMinute" operation="perc_add" value="0" tags="primary"/>
+					<passive_effect name="StaminaLoss" operation="base_set" value="10" tags="primary"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="70,200" tier="1,6"/>
+					<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+					<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+					<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				</effect_group>
+				<effect_group name="Power Attack">
+					<passive_effect name="EntityDamage" operation="perc_add" value="1.3" tags="secondary"/>
+					<passive_effect name="BlockDamage" operation="perc_add" value="2" tags="secondary"/>
+					<passive_effect name="AttacksPerMinute" operation="perc_add" value="0" tags="secondary"/>
+					<passive_effect name="StaminaLoss" operation="base_add" value="15" tags="secondary"/>
+					<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
+						<requirement name="RandomRoll" seed_type="Random" target="self" min_max="1,100" operation="LTE" value="50"/>
+						<requirement name="IsMale" target="self"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
+						<requirement name="RandomRoll" seed_type="Random" target="self" min_max="1,100" operation="LTE" value="50"/>
+						<requirement name="IsMale" target="self" invert="true"/>
+					</triggered_effect>
+
+					<triggered_effect trigger="onSelfSecondaryActionStart" action="AddJournalEntry" journal="powerAttackTip"/>
+				</effect_group>
+			</item>
+	<!-- Legendary Items  -->		
+			<item name="MeleeBatLegendarySawBat">
+				<property name="Extends" value="meleeClubWood" />
+				<property name="Tags" value="melee,weapon,meleeWeapon,legendary"/>
+				<property name="Meshfile" value="#@modfolder:Resources/salvagedbats.unity3d?SawBat_X" /> <!-- CC 4.0 Licenced model by  -->
+				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?SawBat_X"/> 
+				<property name="CustomIcon" value="SawBat" />
+				<property name="Material" value="Mmetal"/>
+				<property name="HoldType" value="2"/> 
+				<effect_group name="Base Effects">
+					<passive_effect name="MaxRange" operation="base_set" value="2.5"/>
+					<passive_effect name="BlockRange" operation="base_set" value="3"/>
+					<passive_effect name="EntityDamage" operation="base_set" value="50"/> <!-- meleeClubWood -->
+					<passive_effect name="BlockDamage" operation="base_set" value="7"/>
+					<passive_effect name="AttacksPerMinute" operation="perc_add" value="0" tags="primary"/>
+					<passive_effect name="StaminaLoss" operation="base_set" value="12" tags="primary"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="70,200" tier="1,6"/>
+					<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
+					<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
+					<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
+				</effect_group>
+				<effect_group name="Power Attack">
+					<passive_effect name="EntityDamage" operation="perc_add" value="1.3" tags="secondary"/>
+					<passive_effect name="BlockDamage" operation="perc_add" value="2" tags="secondary"/>
+					<passive_effect name="AttacksPerMinute" operation="perc_add" value="0" tags="secondary"/>
+					<passive_effect name="StaminaLoss" operation="base_add" value="15" tags="secondary"/>
+					<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
+						<requirement name="RandomRoll" seed_type="Random" target="self" min_max="1,100" operation="LTE" value="50"/>
+						<requirement name="IsMale" target="self"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player2painlg">
+						<requirement name="RandomRoll" seed_type="Random" target="self" min_max="1,100" operation="LTE" value="50"/>
+						<requirement name="IsMale" target="self" invert="true"/>
+					</triggered_effect>
+
+					<triggered_effect trigger="onSelfSecondaryActionStart" action="AddJournalEntry" journal="powerAttackTip"/>
+				</effect_group>
+			</item>			
+<!--		<item name="sawBlade">
+				<property name="Material" value="Msteel"/>
+				<property name="HoldType" value="31"/>
+				<property name="Stacknumber" value="50"/> 
+				<property name="Weight" value="20"/>
+				<property name="EconomicValue" value="50"/>
+				<property name="Group" value="Resources"/>
+				<property name="Meshfile" value="#@modfolder:Resources/SawBlade.unity3d?SawBladePrefab" />
+				<property name="CustomIcon" value="sawBlade" />
+			</item> -->
+		</append>
+</configs>

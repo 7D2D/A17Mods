@@ -1,0 +1,476 @@
+<configs>
+	
+		<append xpath="/item_modifiers" >
+		
+	<!--  Base mesh overrides -->	
+
+<!-- 			<item_modifier name="modMeleeBatAluminumBracket" installable_tags="alumbat" blocking_tags="legendary,braced,woodbat" modifier_tags="shaft" type="mod" rarity="0.5">
+				<property name="Stacknumber" value="1"/>
+				<property name="CustomIcon" value="scrapIron"/>
+				<item_property_overrides name="meleeAluminumBat">
+					<property name="Tags" value="blunt,bat,melee,weapon,meleeWeapon,grip,head,pommel,sweetspot,alumbat,braced"/>
+					<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?AlumBatBraced_X"/> 
+				</item_property_overrides>
+				<effect_group name="Power Attack">
+					<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="injuryBleeding">
+						<requirement name="RandomRoll" target="self" min_max="1,100" operation="LTE" value="80"/>
+					</triggered_effect>
+				</effect_group>
+				<effect_group name="Base Effects">
+					<passive_effect name="MaxRange" operation="base_set" value="2.0"/>
+					<passive_effect name="BlockRange" operation="base_set" value="3"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="200,600" tier="1,6"/>
+					<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+					<passive_effect name="EntityDamage" operation="base_set" value="40,52" tier="1,6" tags="primary,secondary"/>
+					<passive_effect name="BlockDamage" operation="base_set" value="8,14" tier="1,6" tags="primary,secondary"/>
+				</effect_group>
+			</item_modifier>			
+ 			<item_modifier name="modMeleeBatWoodBracket" installable_tags="woodbat" blocking_tags="legendary,braced,alumbat" modifier_tags="shaft" type="mod" rarity="0.5">
+				<property name="Stacknumber" value="1"/>
+				<property name="CustomIcon" value="scrapIron"/>
+				<item_property_overrides name="meleeWoodBat">
+					<property name="Tags" value="blunt,bat,melee,weapon,meleeWeapon,grip,head,pommel,sweetspot,woodbat,braced"/>
+					<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?PlainBatBraced_X"/> 
+				</item_property_overrides>
+				<effect_group name="Power Attack">
+					<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="injuryBleeding">
+						<requirement name="RandomRoll" target="self" min_max="1,100" operation="LTE" value="80"/>
+					</triggered_effect>
+				</effect_group>
+				<effect_group name="Base Effects">
+					<passive_effect name="MaxRange" operation="base_set" value="2.0"/>
+					<passive_effect name="BlockRange" operation="base_set" value="3"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="200,600" tier="1,6"/>
+					<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+					<passive_effect name="EntityDamage" operation="base_set" value="40,52" tier="1,6" tags="primary,secondary"/>
+					<passive_effect name="BlockDamage" operation="base_set" value="8,14" tier="1,6" tags="primary,secondary"/>
+				</effect_group>
+			</item_modifier>			
+			<item_modifier name="modMeleeBatLegendarySawBlade" installable_tags="bat" blocking_tags="revolver,flaredBarrel" modifier_tags="shaft" type="mod" rarity="0.5">
+				<property name="Stacknumber" value="1"/>
+				<property name="CustomIcon" value="SawBat"/>
+				<item_property_overrides name="*">
+					<property name="Material" value="Mmetal"/>
+					<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?SawBat_X"/> 
+				</item_property_overrides>
+				<effect_group name="Power Attack">
+					<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="injuryBleeding">
+						<requirement name="RandomRoll" target="self" min_max="1,100" operation="LTE" value="80"/>
+					</triggered_effect>
+				</effect_group>
+				<effect_group name="Base Effects">
+					<passive_effect name="MaxRange" operation="base_set" value="2.0"/>
+					<passive_effect name="BlockRange" operation="base_set" value="3"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="200,600" tier="1,6"/>
+					<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+					<passive_effect name="EntityDamage" operation="base_set" value="40,52" tier="1,6" tags="primary,secondary"/>
+					<passive_effect name="BlockDamage" operation="base_set" value="8,14" tier="1,6" tags="primary,secondary"/>
+				</effect_group>
+			</item_modifier> -->			
+			
+	<!-- Head Mods  -->	
+	
+			<item_modifier name="modBeanCanBat" installable_tags="bat" modifier_tags="head" type="attachment" blocking_tags="notbraced" rarity="0.5"> <!-- Plan B is use notbraced for the install tag but it dont work-->
+				<item_property_overrides name="*">
+					<property name="Material" value="Mmetal"/>
+					<property name="Damage_type" value="Piercing"/>
+<!--					<effect_group name="Base Effects">
+						<passive_effect name="MaxRange" operation="base_set" value="2.5"/>
+						<passive_effect name="BlockRange" operation="base_set" value="3"/>
+						<passive_effect name="EntityDamage" operation="base_set" value="30"/> 
+						<passive_effect name="BlockDamage" operation="base_set" value="10"/>
+					</effect_group>		-->
+				</item_property_overrides>	
+				<property name="CustomIcon" value="modBeanCanBat"/>
+				<property name="HoldType" value="14"/> 
+				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatBeanCanHold_X" />
+				<property name="DropMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatBeanCanHold_X" />
+				<property name="Stacknumber" value="1"/>
+				<property name="PickupJournalEntry" value="augmentGunsTip"/>
+				<property name="DropScale" value="3"/>
+				<effect_group name="Adding Some Effects">
+					<passive_effect name="MaxRange" operation="base_add" value="0.1"/>
+					<passive_effect name="BlockRange" operation="base_add" value="0.1"/>
+					<passive_effect name="EntityDamage" operation="base_add" value="10"/> 
+					<passive_effect name="BlockDamage" operation="base_add" value="5"/>
+				</effect_group>	
+				<!-- Increases bleeding damage, blade weapons -->
+				<effect_group tiered="false">
+					<requirement name="RandomRoll" seed_type="Random" target="self" min_max="1,100" operation="LTE" value="25"/>
+						<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+				</effect_group>
+				<effect_group tiered="false" name="Power Attack">
+					<requirement name="RandomRoll" seed_type="Random" target="self" min_max="1,100" operation="LTE" value="50"/>
+						<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+				</effect_group>
+				<effect_group name="SpecialEffects">  <!-- CC 4.0 Licenced meshes by Horus3dart (can)filipeb2011 (blade) and Alex Filip (clamp) -->
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatBeanCan_X" parent_transform="Attachments/Grip" local_offset="0,0,0" />
+				</effect_group>
+			</item_modifier>			
+	
+			<item_modifier name="modHoeBat" installable_tags="bat" modifier_tags="head" type="attachment" rarity="0.5">
+				<item_property_overrides name="*">
+					<property name="Material" value="Mmetal"/>
+				</item_property_overrides>					
+				<property name="CustomIcon" value="modHoeBat"/>
+				<property name="HoldType" value="21"/> 
+				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatHoeHold_X" /> 
+				<property name="DropMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatHoeHold_X"/>
+				<property name="Stacknumber" value="1"/>
+				<property name="PickupJournalEntry" value="augmentGunsTip"/>
+				<effect_group name="Adding Some Effects">
+					<passive_effect name="MaxRange" operation="base_add" value="0.3"/>
+					<passive_effect name="BlockRange" operation="base_add" value="0.3"/>
+					<passive_effect name="EntityDamage" operation="base_add" value="5"/> 
+					<passive_effect name="BlockDamage" operation="base_add" value="5"/>
+				</effect_group>					
+				<effect_group name="Power Attack">
+					<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryStunned1">
+						<requirement name="RandomRoll" target="self" min_max="1,100" operation="LTE" value="50"/>
+					</triggered_effect>
+				</effect_group>
+				<effect_group name="SpecialEffects"> <!-- CC 4.0 Licenced mesh by roberto -->
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatHoe_X" parent_transform="Attachments/Grip" local_offset="0,0,0" />
+				</effect_group>
+				<property name="Meshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatHoe_X" />			
+			</item_modifier>	
+			<item_modifier name="modPickBat" installable_tags="bat" modifier_tags="head" type="attachment" rarity="0.5">
+				<item_property_overrides name="*">
+					<property name="Material" value="Mmetal"/>
+					<property name="Damage_type" value="Piercing"/>
+				</item_property_overrides>					
+				<property name="CustomIcon" value="modPickBat"/>
+				<property name="HoldType" value="21"/> <!-- 21 open hand -->
+				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatHoeHold_X" />
+				<property name="DropMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatHoeHold_X"/>
+				<property name="Stacknumber" value="1"/>
+				<property name="PickupJournalEntry" value="augmentGunsTip"/>
+				<effect_group name="Adding Some Effects">
+					<passive_effect name="MaxRange" operation="base_add" value="0.1"/>
+					<passive_effect name="BlockRange" operation="base_add" value="0.1"/>
+					<passive_effect name="EntityDamage" operation="base_add" value="7"/> 
+					<passive_effect name="BlockDamage" operation="base_add" value="4"/>
+				</effect_group>					
+				<effect_group name="Adding Some Effects">
+					<passive_effect name="MaxRange" operation="base_add" value="0.3"/>
+					<passive_effect name="BlockRange" operation="base_add" value="0.3"/>
+					<passive_effect name="EntityDamage" operation="base_add" value="5"/> 
+					<passive_effect name="BlockDamage" operation="base_add" value="5"/>
+				</effect_group>					
+				<effect_group name="Power Attack">
+					<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding">
+						<requirement name="RandomRoll" target="self" min_max="1,100" operation="LTE" value="50"/>
+					</triggered_effect>
+				</effect_group>
+				<effect_group name="SpecialEffects"> <!-- CC 4.0 Licenced mesh by roberto -->
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatPick_X" parent_transform="Attachments/Grip" local_offset="0,0,0" />
+				</effect_group>
+				<property name="Meshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatPick_X" />						
+			</item_modifier>	
+			<item_modifier name="modCrownBat" installable_tags="bat" modifier_tags="head" type="attachment" rarity="0.5">
+				<item_property_overrides name="*">
+					<property name="Material" value="Mmetal"/>
+					<property name="Damage_type" value="Piercing"/>
+				</item_property_overrides>						
+				<property name="Meshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatCrown_X" />	
+				<property name="CustomIcon" value="modCrownBat"/>
+				<property name="HoldType" value="21"/> <!-- 21 open hand -->
+				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatCrownHold_X" />
+				<property name="DropMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatCrownHold_X"/> 
+				<property name="Stacknumber" value="1"/>
+				<property name="PickupJournalEntry" value="augmentGunsTip"/>				
+				<effect_group name="Power Attack">
+					<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding">
+						<requirement name="RandomRoll" target="self" min_max="1,100" operation="LTE" value="50"/>
+					</triggered_effect>
+				</effect_group>
+				<effect_group name="SpecialEffects"> <!-- CC 4.0 Licenced mesh by roberto -->
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatCrown_X" parent_transform="Attachments/Grip" local_offset="0,0,0" />
+				</effect_group>
+			</item_modifier>
+			<item_modifier name="modNautilusBat" installable_tags="bat" modifier_tags="head" type="attachment" rarity="0.5">
+				<property name="CustomIcon" value="modNautilusBat"/>
+				<property name="HoldType" value="21"/> <!-- 21 open hand -->
+				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatNautilusHold_X" />
+				<property name="DropMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatNautilusHold_X"/>
+				<property name="Stacknumber" value="1"/>
+				<property name="PickupJournalEntry" value="augmentGunsTip"/>				
+				<effect_group name="Power Attack">
+					<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryStunned1">
+						<requirement name="RandomRoll" target="self" min_max="1,100" operation="LTE" value="50"/>
+					</triggered_effect>
+				</effect_group>
+				<effect_group name="SpecialEffects"> <!-- CC 4.0 Licenced mesh by C. Yamahata -->
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatNautilus_X" parent_transform="Attachments/Grip" local_offset="0,0,0" />
+				</effect_group>
+			</item_modifier>
+			<item_modifier name="modBarbedBat" installable_tags="bat" modifier_tags="head" type="attachment" rarity="0.5">
+				<property name="CustomIcon" value="modBarbedBat"/>
+				<property name="HoldType" value="21"/> <!-- 21 open hand -->
+				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatBarbedHold_X" />
+				<property name="DropMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatBarbedHold_X"/> 
+				<property name="Stacknumber" value="1"/>
+				<property name="PickupJournalEntry" value="augmentGunsTip"/>
+				<effect_group name="Adding Some Effects">
+					<passive_effect name="MaxRange" operation="base_add" value="0.0"/>
+					<passive_effect name="BlockRange" operation="base_add" value="0.0"/>
+					<passive_effect name="EntityDamage" operation="base_add" value="5"/> 
+					<passive_effect name="BlockDamage" operation="base_add" value="1"/>
+				</effect_group>					
+				<effect_group name="Power Attack">
+					<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding">
+						<requirement name="RandomRoll" target="self" min_max="1,100" operation="LTE" value="50"/>
+					</triggered_effect>
+				</effect_group>
+				<effect_group name="SpecialEffects"> <!-- CC 4.0 Licenced mesh by Gonzalit -->
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatBarbed_X" parent_transform="Attachments/Grip" local_offset="0,0,0" />
+				</effect_group> <!-- CC 4.0 Licenced mesh by minhdaow -->	
+			</item_modifier>				
+			<item_modifier name="modAxeBat" installable_tags="bat" modifier_tags="head" type="attachment" rarity="0.5">
+				<property name="CustomIcon" value="modAxeBat"/>
+				<property name="HoldType" value="21"/> <!-- 21 open hand -->
+				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatAxeHold_X" />
+				<property name="DropMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatAxeHold_X"/>
+				<property name="Stacknumber" value="1"/>
+				<property name="PickupJournalEntry" value="augmentGunsTip"/>
+				<effect_group name="Adding Some Effects">
+					<passive_effect name="MaxRange" operation="base_add" value="0.2"/>
+					<passive_effect name="BlockRange" operation="base_add" value="0.2"/>
+					<passive_effect name="EntityDamage" operation="base_add" value="7"/> 
+					<passive_effect name="BlockDamage" operation="base_add" value="5"/>
+				</effect_group>					
+				<effect_group name="Power Attack">
+					<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding">
+						<requirement name="RandomRoll" target="self" min_max="1,100" operation="LTE" value="50"/>
+					</triggered_effect>
+				</effect_group>
+				<effect_group name="SpecialEffects"> <!-- CC 4.0 Licenced mesh by shedmon -->
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatAxe_X" parent_transform="Attachments/Grip" local_offset="0,0,0" />
+				</effect_group>
+			</item_modifier>
+
+			<item_modifier name="modMaceBat" installable_tags="bat" modifier_tags="head" type="attachment" rarity="0.5">
+				<property name="CustomIcon" value="modMaceBat"/>
+				<property name="HoldType" value="45"/> <!-- Sack -->
+				<property name="HandMeshfile" value="Items/Misc/sackPrefab" />
+				<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/> 
+				<property name="Stacknumber" value="1"/>
+				<property name="PickupJournalEntry" value="augmentGunsTip"/>
+				<effect_group name="Adding Some Effects">
+					<passive_effect name="MaxRange" operation="base_add" value="0.05"/>
+					<passive_effect name="BlockRange" operation="base_add" value="0.05"/>
+					<passive_effect name="EntityDamage" operation="base_add" value="5"/> 
+					<passive_effect name="BlockDamage" operation="base_add" value="5"/>
+				</effect_group>					
+				<effect_group name="Power Attack">
+					<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryStunned1">
+						<requirement name="RandomRoll" target="self" min_max="1,100" operation="LTE" value="50"/>
+					</triggered_effect>
+				</effect_group>
+				<effect_group name="SpecialEffects"> <!-- CC 4.0 Licenced mesh by arthur_muliterno -->
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatMace_X" parent_transform="Attachments/Grip" local_offset="0,0,0" />
+				</effect_group>
+			</item_modifier>
+
+			<item_modifier name="modKanaboBat" installable_tags="bat" modifier_tags="head" type="attachment" rarity="0.5">
+				<property name="CustomIcon" value="modKanaboBat"/>
+				<property name="HoldType" value="45"/> <!-- Sack -->
+				<property name="HandMeshfile" value="Items/Misc/sackPrefab" />
+				<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+				<property name="Stacknumber" value="1"/>
+				<property name="PickupJournalEntry" value="augmentGunsTip"/>
+				<effect_group name="Adding Some Effects">
+					<passive_effect name="MaxRange" operation="base_add" value="0.0"/>
+					<passive_effect name="BlockRange" operation="base_add" value="0.0"/>
+					<passive_effect name="EntityDamage" operation="base_add" value="7"/> 
+					<passive_effect name="BlockDamage" operation="base_add" value="3"/>
+				</effect_group>				
+				<effect_group name="Power Attack">
+					<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryStunned1">
+						<requirement name="RandomRoll" target="self" min_max="1,100" operation="LTE" value="50"/>
+					</triggered_effect>
+				</effect_group>
+				<effect_group name="SpecialEffects"> <!-- CC 4.0 Licenced mesh by K1TT3N -->
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatKanabo_X" parent_transform="Attachments/Grip" local_offset="0,0,0" />
+				</effect_group>
+			</item_modifier>
+			<item_modifier name="modNailedBat" installable_tags="bat" modifier_tags="head" type="attachment" rarity="0.5">
+				<property name="CustomIcon" value="modNailedBat"/>
+				<property name="HoldType" value="45"/> <!-- Sack -->
+				<property name="HandMeshfile" value="Items/Misc/sackPrefab" />
+				<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+				<property name="Stacknumber" value="1"/>
+				<property name="PickupJournalEntry" value="augmentGunsTip"/>
+				<effect_group name="Adding Some Effects">
+					<passive_effect name="MaxRange" operation="base_add" value="0.05"/>
+					<passive_effect name="BlockRange" operation="base_add" value="0.05"/>
+					<passive_effect name="EntityDamage" operation="base_add" value="6"/> 
+					<passive_effect name="BlockDamage" operation="base_add" value="1"/>
+				</effect_group>					
+				<effect_group name="Power Attack">
+					<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding">
+						<requirement name="RandomRoll" target="self" min_max="1,100" operation="LTE" value="50"/>
+					</triggered_effect>
+				</effect_group>
+				<effect_group name="SpecialEffects"> <!-- CC 4.0 Licenced mesh by Sam Constance -->
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatNailed_X" parent_transform="Attachments/Grip" local_offset="0,0,0" />
+				</effect_group>
+			</item_modifier>
+	
+<!-- SweetSpot Mods  -->
+
+			<item_modifier name="modSmallGearBat" installable_tags="bat" modifier_tags="sweetspot" type="attachment" rarity="0.5">
+				<property name="CustomIcon" value="modSmallGearBat"/>
+				<property name="HoldType" value="21"/> 
+				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatSmallGearHold_X" />
+				<property name="DropMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatSmallGearHold_X"/> 						
+				<property name="Stacknumber" value="1"/>
+				<property name="PickupJournalEntry" value="augmentGunsTip"/>
+				<!-- Increases durability, increases block efficiency, all melee -->
+				<effect_group tiered="false">
+					<passive_effect name="BlockDamage" operation="perc_add" value=".15"/>
+					<passive_effect name="DegradationMax" operation="perc_add" value=".3"/>
+				</effect_group>
+				<effect_group name="SpecialEffects"> <!-- CC 4.0 Licenced meshes by Darren Mcnerney -->
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatSmallGear_X" parent_transform="Attachments/Grip" local_offset="0,0,0" />
+				</effect_group>
+			</item_modifier>
+			<item_modifier name="modSpeedBallBat" installable_tags="bat" modifier_tags="sweetspot" type="attachment" rarity="0.5">
+				<property name="CustomIcon" value="modSpeedBallBat"/>
+				<property name="HoldType" value="21"/> 
+				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatSpeedBallHold_X" />
+				<property name="DropMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatSpeedBallHold_X"/> 						
+				<property name="Stacknumber" value="1"/>
+				<property name="PickupJournalEntry" value="augmentGunsTip"/>
+
+				<!-- Reduces Stamina usage on all attacks, all melee -->
+				<effect_group tiered="false">
+					<passive_effect name="AttacksPerMinute" operation="perc_add" value="0.2" tags="primary,secondary"/>
+				</effect_group>
+				<effect_group name="SpecialEffects"> <!-- CC 4.0 Licenced meshes by sudharsan (ball) and Flukierjupiter (Quill) -->
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatSpeedBall_X" parent_transform="Attachments/Grip" local_offset="0,0,0" />
+				</effect_group>
+			</item_modifier>			
+			<item_modifier name="modWeightGearBat" installable_tags="bat" modifier_tags="sweetspot" type="attachment" rarity="0.5">
+				<property name="CustomIcon" value="modWeightGearBat"/>
+				<property name="HoldType" value="21"/> <!-- 21 open hand -->
+				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatWeightGearHold_X" />
+				<property name="DropMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatWeightGearHold_X"/> 
+				<property name="Stacknumber" value="1"/>
+				<property name="PickupJournalEntry" value="augmentGunsTip"/>				
+				<effect_group name="Power Attack">
+					<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryStunned1">
+						<requirement name="RandomRoll" target="self" min_max="1,100" operation="LTE" value="50"/>
+					</triggered_effect>
+				</effect_group>
+				<effect_group name="SpecialEffects"> <!-- CC 4.0 Licenced mesh by rampolymagic -->
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatWeightGear_X" parent_transform="Attachments/Grip" local_offset="0,0,0" />
+				</effect_group>
+			</item_modifier>			
+
+			
+<!-- Special Effects Mods -->
+
+			<item_modifier name="modBurningBat" installable_tags="bat" modifier_tags="fire" type="attachment" rarity="0.5">
+				<property name="CustomIcon" value="modBurningBat"/>
+				<property name="Stacknumber" value="1"/>
+				<property name="PickupJournalEntry" value="augmentGunsTip"/>				<property name="Stacknumber" value="1"/>
+				<!-- Changes damage type to heat -->
+				<item_property_overrides name="*">
+					<property name="DamageType" value="Heat"/>
+				</item_property_overrides>
+				<effect_group tiered="false">
+					<passive_effect name="BlockDamage" operation="perc_add" value=".4"/>
+				</effect_group>
+				<effect_group name="SpecialEffects"> <!-- Vanilla -->
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="ParticleEffects/p_torch_wall" local_offset="0,0.5,0"/>
+				</effect_group>
+			</item_modifier>
+			
+			<item_modifier name="modSparkyBat" installable_tags="bat" modifier_tags="fire" type="attachment" rarity="0.5">
+				<property name="CustomIcon" value="modSparkyBat"/>
+				<property name="Stacknumber" value="1"/>
+				<property name="PickupJournalEntry" value="augmentGunsTip"/>				
+				<item_property_overrides name="*">
+					<property name="DamageType" value="Electrical"/>
+				</item_property_overrides>
+				<effect_group tiered="false">
+					<passive_effect name="BlockDamage" operation="perc_add" value=".3"/>
+				</effect_group>
+				<effect_group name="SpecialEffects"> 
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/LightningParticle.unity3d?LightningParticle_X" parent_transform="Attachments/Grip" local_offset="0,0,0"/>
+				</effect_group>
+			</item_modifier>			
+<!-- Grip Mods  -->	
+
+			<item_modifier name="modGripRubberBat" installable_tags="bat" modifier_tags="grip" type="attachment" rarity="0.5">
+				<property name="CustomIcon" value="modGripRubberBat"/>
+				<property name="HoldType" value="21"/> <!-- 21 open hand -->
+				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatGripRubberHold_X" />
+				<property name="DropMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatGripRubberHold_X"/> 						
+				<property name="Stacknumber" value="1"/>
+				<property name="PickupJournalEntry" value="augmentGunsTip"/>
+				<!-- Reduces Stamina usage on all attacks, all melee -->
+				<effect_group tiered="false">
+					<passive_effect name="StaminaLoss" operation="perc_add" value="-.3" tags="primary,secondary"/>
+				</effect_group>
+				<effect_group name="SpecialEffects"> <!-- CC 4.0 Licenced mesh by GrizzleSyrens -->
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatGripRubber_X" parent_transform="Attachments/Grip" local_offset="0,0,0" />
+				</effect_group>
+			</item_modifier>	
+			<item_modifier name="modGripLeatherBat" installable_tags="bat" modifier_tags="grip" type="attachment" rarity="0.5">
+				<property name="CustomIcon" value="modGripLeatherBat"/>
+				<property name="HoldType" value="21"/> <!-- 21 open hand -->
+				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatGripHold_X" />
+				<property name="DropMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatGripHold_X"/> 					
+				<property name="Stacknumber" value="1"/>
+				<property name="PickupJournalEntry" value="augmentGunsTip"/>
+				<!-- Reduces Stamina usage on all attacks, all melee -->
+				<effect_group tiered="false">
+					<passive_effect name="StaminaLoss" operation="perc_add" value="-.2" tags="primary,secondary"/>
+				</effect_group>
+				<effect_group name="SpecialEffects"> <!-- CC 4.0 Licenced mesh by GrizzleSyrens -->
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatGrip_X" parent_transform="Attachments/Grip" local_offset="0,0,0" />
+				</effect_group>
+			</item_modifier>
+			
+<!-- Pommel Mods  -->
+
+			<item_modifier name="modPommelHoundBat" installable_tags="bat" modifier_tags="pommel" type="attachment" rarity="0.5">
+				<property name="CustomIcon" value="modPommelHoundBat"/>
+				<property name="HoldType" value="21"/> <!-- 21 open hand -->
+				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatHoundPommelHold_X" />
+				<property name="DropMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatHoundPommelHold_X"/> 					
+				<property name="Stacknumber" value="1"/>
+				<property name="PickupJournalEntry" value="augmentGunsTip"/>
+				<!-- Gain HP/sec when under 50% HP -->
+				<effect_group tiered="false">
+					<requirements>
+						<requirement name="StatComparePercCurrentToMax" stat="health" operation="LTE" value=".5"/>
+					</requirements>
+					<passive_effect name="HealthChangeOT" operation="perc_add" value="0.2" />
+				</effect_group>
+				<effect_group name="SpecialEffects"> <!-- CC 4.0 Licenced mesh by Choges -->
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatHoundPommel_X" parent_transform="Attachments/Grip" local_offset="0,0,0" />
+				</effect_group>
+			</item_modifier>
+			<item_modifier name="modPommelPantherBat" installable_tags="bat" modifier_tags="pommel" type="attachment" rarity="0.5">
+				<property name="CustomIcon" value="modPommelPantherBat"/>
+				<property name="HoldType" value="21"/> <!-- 21 open hand -->
+				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatPantherPommelHold_X" />
+				<property name="DropMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatPantherPommelHold_X"/> 						
+				<property name="Stacknumber" value="1"/>
+				<property name="PickupJournalEntry" value="augmentGunsTip"/>
+				<!-- Gain HP/sec when under 50% HP -->
+				<effect_group tiered="false">
+					<requirements>
+						<requirement name="StatComparePercCurrentToMax" stat="health" operation="LTE" value=".5"/>
+					</requirements>
+					<passive_effect name="HealthChangeOT" operation="perc_add" value="0.1" />
+				</effect_group>
+				<effect_group name="SpecialEffects"> <!-- CC 4.0 Licenced mesh by wmrebenok -->
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatPantherPommel_X" parent_transform="Attachments/Grip" local_offset="0,0,0" />
+				</effect_group>
+			</item_modifier>
+		</append>
+</configs>

@@ -1,0 +1,38 @@
+<configs>
+		<insertAfter xpath="/lootcontainers/lootgroup[@name='modMeleeT3']">
+			<lootgroup name="modBatsT1"> <!-- This is good for zombie loot groups to limit items to those that reasonably might be carried.   -->
+					<item name="modHoeBat"/>
+					<item name="modPickBat"/>
+					<item name="modBarbedBat"/>
+					<item name="modNailedBat"/>
+					<item name="modSmallGearBat"/>
+					<item name="modPommelPantherBat"/>					
+			</lootgroup>
+			<lootgroup name="modBatsT2"> <!-- This is good for zombie loot groups to limit items to those that reasonably might be carried.   -->
+					<item name="modCrownBat"/>
+					<item name="modNautilusBat"/>
+					<item name="modMaceBat"/>
+					<item name="modKanaboBat"/>
+					<item name="modWeightGearBat"/>
+					<item name="modGripLeatherBat"/>					
+			</lootgroup>
+			<lootgroup name="modBatsT3"> <!-- This is good for zombie loot groups to limit items to those that reasonably might be carried.   -->
+					<item name="modBeanCanBat"/>
+					<item name="modAxeBat"/>
+					<item name="modSpeedBallBat"/>
+					<item name="modBurningBat"/>
+					<item name="modSparkyBat"/>					
+					<item name="modPommelHoundBat"/>
+					<item name="modGripRubberBat"/>						
+			</lootgroup>
+		</insertAfter>
+		<append xpath="/lootcontainers/lootgroup[@name='modAllT1']">
+				<item group="modBatsT1" />
+		</append>
+		<append xpath="/lootcontainers/lootgroup[@name='modAllT2']">
+				<item group="modBatsT2" />
+		</append>
+			<append xpath="/lootcontainers/lootgroup[@name='modAllT3']">
+				<item group="modBatsT3" />
+		</append>
+</configs>
