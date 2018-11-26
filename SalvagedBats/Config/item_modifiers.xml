@@ -2,7 +2,7 @@
 	
 		<append xpath="/item_modifiers" >
 		
-	<!--  Base mesh overrides -->	
+	<!--  Base mesh overrides ...   This section is Informational only.  Until Tag over rides work, swaping attachment and Mod wont work. -->	
 
 <!-- 			<item_modifier name="modMeleeBatAluminumBracket" installable_tags="alumbat" blocking_tags="legendary,braced,woodbat" modifier_tags="shaft" type="mod" rarity="0.5">
 				<property name="Stacknumber" value="1"/>
@@ -70,25 +70,26 @@
 			
 	<!-- Head Mods  -->	
 	
-			<item_modifier name="modBeanCanBat" installable_tags="bat" modifier_tags="head" type="attachment" blocking_tags="notbraced" rarity="0.5"> <!-- Plan B is use notbraced for the install tag but it dont work-->
+			<item_modifier name="modBeanCanBat" installable_tags="bat" modifier_tags="head" type="attachment" blocking_tags="notbraced" rarity="0.5"> <!-- Plan B is use notbraced for the install tag but tag overrides do not work yet -->
 				<item_property_overrides name="*">
-					<property name="Material" value="Mmetal"/>
+					<property name="Material" value="Mmetal"/> <!-- Material and tag over rides do not work yet -->
 					<property name="Damage_type" value="Piercing"/>
-<!--					<effect_group name="Base Effects">
+<!--				<effect_group name="Base Effects">
 						<passive_effect name="MaxRange" operation="base_set" value="2.5"/>
 						<passive_effect name="BlockRange" operation="base_set" value="3"/>
 						<passive_effect name="EntityDamage" operation="base_set" value="30"/> 
 						<passive_effect name="BlockDamage" operation="base_set" value="10"/>
-					</effect_group>		-->
+					</effect_group>	This over rides the base weapons base effects, not add or subtract to it as below	-->
 				</item_property_overrides>	
 				<property name="CustomIcon" value="modBeanCanBat"/>
 				<property name="HoldType" value="14"/> 
 				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatBeanCanHold_X" />
 				<property name="DropMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatBeanCanHold_X" />
+<!--				<property name="StickyMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatBeanCanHold_X" /> for arrows later... -->
 				<property name="Stacknumber" value="1"/>
 				<property name="PickupJournalEntry" value="augmentGunsTip"/>
 				<property name="DropScale" value="3"/>
-				<effect_group name="Adding Some Effects">
+				<effect_group name="Adding Some Effects"> <!-- this is where you add or subtract damage and effects  -->
 					<passive_effect name="MaxRange" operation="base_add" value="0.1"/>
 					<passive_effect name="BlockRange" operation="base_add" value="0.1"/>
 					<passive_effect name="EntityDamage" operation="base_add" value="10"/> 
