@@ -1,0 +1,559 @@
+<configs>
+	<append xpath="/items">
+		<!-- items needed to scrap Xyth junk into -->
+		<item id="" name="itemMaster">
+			<property name="Meshfile" value="Items/Misc/sackPrefab" />
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+			<property name="Material" value="Morganic" />
+			<property name="HoldType" value="45" />
+			<property name="Stacknumber" value="50" />
+			<property name="Weight" value="5" />
+			<property name="Group" value="Resources" />
+			<property name="SellableToTrader" value="false" />
+		</item>
+		<item id="" name="scrapSteel">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_scrapSteel" />
+			<property name="Material" value="Msteel" />
+			<property name="Weight" value="1" />
+		</item>
+		<item id="" name="scrapRubber">
+			<property name="Extends" value="itemMaster" />
+			<property name="DescriptionKey" value="scrapRubberDesc" />
+			<property name="CustomIcon" value="ui_game_symbol_scrapRubber" />
+			<property name="CustomIconTint" value="232323" />
+			<property name="Material" value="Mrubber" />
+			<property name="Weight" value="1" />
+		</item>
+
+	<!-- Xyth junk items -->	
+	<!-- Iron -->
+		<item id="" name="ironScissors">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="Mmetal" />
+			<property name="CustomIcon" value="ui_game_symbol_ironScissors" />
+			<property name="DescriptionKey" value="ironScissorsDesc" />
+			<property name="Weight" value="1" />
+		</item>
+		<item id="" name="ironSoldier">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_ironSoldier" />
+			<property name="DescriptionKey" value="ironSoldierDesc" />
+			<property name="Material" value="Mmetal" />
+			<property name="Weight" value="1" />
+		</item>
+		<item id="" name="ironPaperClips">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_ironPaperClips" />
+			<property name="DescriptionKey" value="ironPaperClipsDesc" />
+			<property name="Material" value="Mmetal" />
+			<property name="Weight" value="1" />
+		</item>
+		<item id="" name="ironWeight">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_ironWeight" />
+			<property name="DescriptionKey" value="ironWeightDesc" />
+			<property name="Material" value="Mmetal" />
+			<property name="Weight" value="50" />
+			<property name="Stacknumber" value="10" />
+		</item>
+		<item id="" name="ironHinge">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_ironHinge" />
+			<property name="DescriptionKey" value="ironHingeDesc" />
+			<property name="Material" value="Mmetal" />
+			<property name="Weight" value="1" />
+		</item>
+		<item id="" name="ironHairSpray">
+			<property name="Extends" value="itemMaster" />
+			<property name="DescriptionKey" value="ironHairSprayDesc" />
+			<property name="Material" value="Mmetal" />
+			<property name="CustomIcon" value="ui_game_symbol_ironHairSpray" />
+			<property name="Weight" value="1" />
+		</item>	
+	<!-- lead -->	
+		<item id="" name="leadMusketBalls">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_leadMusketBalls" />
+			<property name="DescriptionKey" value="leadMusketBallsDesc" />
+			<property name="Material" value="Mlead" />
+			<property name="Weight" value="1" />
+			<property name="Stacknumber" value="25" />
+		</item>
+		<item id="" name="leadSolder">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_leadSolder" />
+			<property name="DescriptionKey" value="leadSolderDesc" />
+			<property name="Material" value="Mlead" />
+			<property name="Weight" value="1" />
+			<property name="Stacknumber" value="25" />
+		</item>
+		<item id="" name="leadSoldier">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_leadSoldier" />
+			<property name="DescriptionKey" value="leadSoldierDesc" />
+			<property name="Material" value="Mlead" />
+			<property name="Weight" value="1" />
+			<property name="Stacknumber" value="25" />
+		</item>
+		<!-- Brass -->
+		<item id="" name="brassHinge">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_brassHinge" />
+			<property name="DescriptionKey" value="brassHingeDesc" />
+			<property name="Material" value="Mbrass" />
+			<property name="Weight" value="1" />
+		</item>
+		<item id="" name="brassKnuckles">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_brassKnuckles" />
+			<property name="DescriptionKey" value="brassKnucklesDesc" />
+			<property name="Material" value="Mbrass" />
+			<property name="Weight" value="2" />
+		</item>
+		<item id="" name="brassMonkey">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_brassMonkey" />
+			<property name="DescriptionKey" value="brassMonkeyDesc" />
+			<property name="Material" value="Mbrass" />
+			<property name="Weight" value="1" />
+		</item>
+		<item id="" name="brassCowBell">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_brassCowBell" />
+			<property name="DescriptionKey" value="brassCowBellDesc" />
+			<property name="Material" value="Mbrass" />
+			<property name="Weight" value="2" />
+		</item>
+		<!-- Stone  -->
+		<item id="" name="stonePlate">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_stonePlate" />
+			<property name="DescriptionKey" value="stonePlateDesc" />
+			<property name="Material" value="Mstone" />
+			<property name="Weight" value="15" />
+		</item>
+		<item id="" name="stonePissPot">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_stonePissPot" />
+			<property name="DescriptionKey" value="stonePissPotDesc" />
+			<property name="Material" value="Mstone" />
+			<property name="Weight" value="30" />
+		</item>
+		<item id="" name="stonePaperWeight">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_stonePaperWeight" />
+			<property name="DescriptionKey" value="stonePaperWeightDesc" />
+			<property name="Material" value="Mstone" />
+			<property name="Weight" value="25" />
+		</item>
+		<item id="" name="stoneStatue">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_stoneStatue" />
+			<property name="DescriptionKey" value="stoneStatueDesc" />
+			<property name="Material" value="Mstone" />
+			<property name="Weight" value="30" />
+		</item>
+		<item id="" name="stoneCrackedAshTray">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="Mstone" />
+			<property name="CustomIcon" value="ui_game_symbol_stoneCrackedAshTray" />
+			<property name="Weight" value="5" />
+		</item>	
+		<!-- Wood  -->
+		<item id="" name="woodSoldier">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_woodSoldier" />
+			<property name="DescriptionKey" value="woodSoldierDesc" />
+			<property name="Material" value="Mwood" />
+			<property name="Weight" value="5" />
+		</item>
+		<item id="" name="woodWhistle">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_woodWhistle" />
+			<property name="DescriptionKey" value="woodWhistleDesc" />
+			<property name="Material" value="Mwood" />
+			<property name="Weight" value="5" />
+		</item>
+		<item id="" name="woodSpoon">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_woodSpoon" />
+			<property name="DescriptionKey" value="woodSpoonDesc" />
+			<property name="Material" value="Mwood" />
+			<property name="Weight" value="5" />
+		</item>
+		<item id="" name="woodYoyo">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="Mwood" />
+			<property name="CustomIcon" value="ui_game_symbol_woodYoyo" />
+			<property name="DescriptionKey" value="woodYoyoDesc" />
+			<property name="Weight" value="5" />
+		</item>
+		<!-- Paper   -->
+		<item id="" name="paperPlayingCards">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_paperPlayingCards" />
+			<property name="DescriptionKey" value="paperPlayingCardsDesc" />
+			<property name="Material" value="Mpaper" />
+			<property name="Weight" value="3" />
+		</item>
+		<item id="" name="paperNews">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_paperNews" />
+			<property name="DescriptionKey" value="paperNewsDesc" />
+			<property name="Material" value="Mpaper" />
+			<property name="Weight" value="5" />
+		</item>
+		<item id="" name="paperToilet">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_paperToilet" />
+			<property name="DescriptionKey" value="paperToiletDesc" />
+			<property name="Material" value="Mpaper" />
+			<property name="Weight" value="4" />
+		</item>
+		<item id="" name="paperGoggles">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_paperGoggles" />
+			<property name="DescriptionKey" value="paperGogglesDesc" />
+			<property name="Material" value="Mpaper" />
+			<property name="Weight" value="3" />
+		</item>
+		<item id="" name="paperMatches">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="Mpaper" />
+			<property name="CustomIcon" value="ui_game_symbol_paperMatches" />
+			<property name="DescriptionKey" value="paperMatchesDesc" />
+			<property name="Weight" value="3" />
+		</item>	
+		<!-- Cloth  -->
+		<item id="" name="clothTeddyBear">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_clothTeddyBearJZ" />
+			<property name="DescriptionKey" value="clothTeddyBearDesc" />
+			<property name="Material" value="Mcloth" />
+			<property name="Weight" value="10" />
+		</item>
+		<item id="" name="clothRags">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_clothRags" />
+			<property name="DescriptionKey" value="clothRagsDesc" />
+			<property name="Material" value="Mcloth" />
+			<property name="Weight" value="10" />
+		</item>
+		<item id="" name="clothRug">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_clothRug" />
+			<property name="DescriptionKey" value="clothRugDesc" />
+			<property name="Material" value="Mcloth" />
+			<property name="Weight" value="25" />
+		</item>
+		<item id="" name="clothOldBlanket">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="Mcloth" />
+			<property name="CustomIcon" value="ui_game_symbol_clothOldBlanket" />
+			<property name="DescriptionKey" value="clothOldBlanketDesc" />
+			<property name="Weight" value="10" />
+		</item>
+		<item id="" name="clothOldShoe">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="Mcloth" />
+			<property name="CustomIcon" value="ui_game_symbol_clothOldShoe" />
+			<property name="DescriptionKey" value="clothOldShoeDesc" />
+			<property name="Weight" value="10" />
+		</item>
+		<item id="" name="clothChewedDogCollar">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="Mcloth" />
+			<property name="CustomIcon" value="ui_game_symbol_clothChewedDogCollar" />
+			<property name="DescriptionKey" value="clothChewedDogCollarDesc" />
+			<property name="Weight" value="5" />
+		</item>	
+		<!-- Plastic  -->
+		<item id="" name="plasticCds">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_plasticCds" />
+			<property name="DescriptionKey" value="plasticCdsDesc" />
+			<property name="Material" value="Mplastics" />
+			<property name="Weight" value="2" />
+		</item>
+		<item id="" name="plasticSoldier">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_plasticSoldier" />
+			<property name="DescriptionKey" value="plasticSoldierDesc" />
+			<property name="Material" value="Mplastics" />
+			<property name="Weight" value="2" />
+		</item>
+		<item id="" name="plasticLegos">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_plasticLegos" />
+			<property name="DescriptionKey" value="plasticLegosDesc" />
+			<property name="Material" value="Mplastics" />
+			<property name="Weight" value="2" />
+		</item>
+		<item id="" name="plasticCondom">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="Mrubber" />
+			<property name="CustomIcon" value="ui_game_symbol_plasticCondom" />
+			<property name="DescriptionKey" value="plasticCondomDesc" />
+			<property name="Weight" value="2" />
+		</item>
+		<item id="" name="plasticHairBrush">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="Mplastics" />
+			<property name="CustomIcon" value="ui_game_symbol_plasticHairBrush" />
+			<property name="DescriptionKey" value="plasticHairBrushDesc" />
+			<property name="Weight" value="2" />
+		</item>
+		<item id="" name="plasticFrisbee">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="Mplastics" />
+			<property name="CustomIcon" value="ui_game_symbol_plasticFrisbee" />
+			<property name="DescriptionKey" value="plasticFrisbeeDesc" />
+			<property name="Weight" value="3" />
+		</item>
+		<item id="" name="plasticKite">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="Mplastics" />
+			<property name="CustomIcon" value="ui_game_symbol_plasticKite" />
+			<property name="DescriptionKey" value="plasticKiteDesc" />
+			<property name="Weight" value="2" />
+		</item>
+		<item id="" name="plasticToothBrush">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="Mplastics" />
+			<property name="CustomIcon" value="ui_game_symbol_plasticToothBrush" />
+			<property name="DescriptionKey" value="plasticToothBrushDesc" />
+			<property name="Weight" value="2" />
+		</item>
+		<item id="" name="plasticLighter">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="Mplastics" />
+			<property name="CustomIcon" value="ui_game_symbol_plasticLighter" />
+			<property name="DescriptionKey" value="plasticLighterDesc" />
+			<property name="Weight" value="2" />
+		</item>
+		<item id="" name="plasticShoppingBag">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="Mplastics" />
+			<property name="CustomIcon" value="ui_game_symbol_plasticShoppingBag" />
+			<property name="DescriptionKey" value="plasticShoppingBagDesc" />
+			<property name="Weight" value="2" />
+		</item>
+		<!-- Electronic   -->
+		<item id="" name="electronic3ds">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_electronic3ds" />
+			<property name="DescriptionKey" value="electronic3dsDesc" />
+			<property name="Material" value="MelectronicParts" />
+			<property name="Weight" value="5" />
+		</item>
+		<item id="" name="electronicCellPhone">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_electronicCellPhone" />
+			<property name="DescriptionKey" value="electronicCellPhoneDesc" />
+			<property name="Material" value="MelectronicParts" />
+			<property name="Weight" value="5" />
+		</item>
+		<item id="" name="electronicClockRadio">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_electronicClockRadio" />
+			<property name="DescriptionKey" value="electronicClockRadioDesc" />
+			<property name="Material" value="MelectronicParts" />
+			<property name="Weight" value="5" />
+		</item>
+		<item id="" name="electronicBrokenIPod">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="MelectronicParts" />
+			<property name="CustomIcon" value="ui_game_symbol_electronicBrokenIPod" />
+			<property name="DescriptionKey" value="electronicBrokenIPodDesc" />
+			<property name="Weight" value="5" />
+		</item>
+		<item id="" name="electronicBrokenIpad">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="MelectronicParts" />
+			<property name="CustomIcon" value="ui_game_symbol_electronicBrokenIPad" />
+			<property name="DescriptionKey" value="electronicBrokenIPadDesc" />
+			<property name="Weight" value="5" />
+		</item>
+		<item id="" name="electronicBrokenLapTop">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="MelectronicParts" />
+			<property name="CustomIcon" value="ui_game_symbol_electronicBrokenLapTop" />
+			<property name="DescriptionKey" value="electronicBrokenLapTopDesc" />
+			<property name="Weight" value="10" />
+		</item>	
+		<!-- Electrical  -->
+		<item id="" name="electricShaver">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_electricShaver" />
+			<property name="DescriptionKey" value="electricShaverDesc" />
+			<property name="Material" value="MelectricParts" />
+			<property name="Weight" value="3" />
+		</item>
+		<item id="" name="electricToyMotor">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_electricToyMotor" />
+			<property name="DescriptionKey" value="electricToyMotorDesc" />
+			<property name="Material" value="MelectricParts" />
+			<property name="Weight" value="2" />
+		</item>
+		<item id="" name="electricToaster">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_electricToaster" />
+			<property name="DescriptionKey" value="electricToasterDesc" />
+			<property name="Material" value="MelectricParts" />
+			<property name="Weight" value="5" />
+		</item>
+		<item id="" name="electricVibrator">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="MelectricParts" />
+			<property name="CustomIcon" value="ui_game_symbol_electricVibrator" />
+			<property name="DescriptionKey" value="electricVibratorDesc" />
+			<property name="Weight" value="2" />
+		</item>
+		<item id="" name="electricBlender">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="MelectricParts" />
+			<property name="CustomIcon" value="ui_game_symbol_electricBlender" />
+			<property name="DescriptionKey" value="electricBlenderDesc" />
+			<property name="Weight" value="5" />
+		</item>
+		<!-- Mechanical  -->
+		<item id="" name="mechanicalKeyPad">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_mechanicalKeyPad" />
+			<property name="DescriptionKey" value="mechanicalKeyPadDesc" />
+			<property name="Material" value="MmechanicalParts" />
+			<property name="Weight" value="3" />
+		</item>
+		<item id="" name="mechanicalOldWatch">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_mechanicalOldWatch" />
+			<property name="DescriptionKey" value="mechanicalOldWatchDesc" />
+			<property name="Material" value="MmechanicalParts" />
+			<property name="Weight" value="3" />
+		</item>
+		<item id="" name="mechanicalTypeWriter">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_mechanicalTypeWriter" />
+			<property name="DescriptionKey" value="mechanicalTypeWriterDesc" />
+			<property name="Material" value="MmechanicalParts" />
+			<property name="Weight" value="5" />
+		</item>
+		<!-- Rubber  -->
+		<item id="" name="rubberDoll">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_rubberDoll" />
+			<property name="DescriptionKey" value="rubberDollDesc" />
+			<property name="Material" value="Mrubber" />
+			<property name="Weight" value="2" />
+		</item>
+		<item id="" name="rubberDuck">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_rubberDuck" />
+			<property name="DescriptionKey" value="rubberDuckDesc" />
+			<property name="Material" value="Mrubber" />
+			<property name="Weight" value="2" />
+		</item>
+		<item id="" name="rubberChicken">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_rubberChicken" />
+			<property name="DescriptionKey" value="rubberChickenDesc" />
+			<property name="Material" value="Mrubber" />
+			<property name="Weight" value="2" />
+		</item>
+		<item id="" name="rubberBands">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_rubberBands" />
+			<property name="DescriptionKey" value="rubberBandsDesc" />
+			<property name="Material" value="Mrubber" />
+			<property name="Weight" value="2" />
+		</item>
+		<item id="" name="rubberOldRainBoot">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="Mrubber" />
+			<property name="CustomIcon" value="ui_game_symbol_rubberOldRainBoot" />
+			<property name="Weight" value="3" />
+		</item>
+		<!-- Steel  -->
+		<item id="" name="steelHinge">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_steelHinge" />
+			<property name="DescriptionKey" value="steelHingeDesc" />
+			<property name="Material" value="Msteel" />
+			<property name="Weight" value="1" />
+		</item>
+		<item id="" name="steelSpoon">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_steelSpoon" />
+			<property name="DescriptionKey" value="steelSpoonDesc" />
+			<property name="Material" value="Msteel" />
+			<property name="Weight" value="1" />
+		</item>
+		<item id="" name="steelBracelet">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_steelBracelet" />
+			<property name="DescriptionKey" value="steelBraceletDesc" />
+			<property name="Material" value="Msteel" />
+			<property name="Weight" value="1" />
+		</item>
+		<item id="" name="steelDogBowl">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="Msteel" />
+			<property name="CustomIcon" value="ui_game_symbol_steelDogBowl" />
+			<property name="DescriptionKey" value="steelDogBowlDesc" />
+			<property name="Weight" value="2" />
+		</item>	
+		<item id="" name="steelFork">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="Msteel" />
+			<property name="CustomIcon" value="ui_game_symbol_steelFork" />
+			<property name="DescriptionKey" value="steelForkDesc" />
+			<property name="Weight" value="1" />
+		</item>
+		<item id="" name="steelButterKnife">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="Msteel" />
+			<property name="CustomIcon" value="ui_game_symbol_steelButterKnife" />
+			<property name="DescriptionKey" value="steelButterKnifeDesc" />
+			<property name="Weight" value="1" />
+		</item>
+		<!--  Glass  -->
+		<item id="" name="glassPerfume">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_glassPurfume" />
+			<property name="DescriptionKey" value="glassPurfumeDesc" />
+			<property name="Material" value="Mglass" />
+			<property name="Weight" value="10" />
+		</item>
+		<item id="" name="glassCompact">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_glassCompact" />
+			<property name="DescriptionKey" value="glassCompactDesc" />
+			<property name="Material" value="Mglass" />
+			<property name="Weight" value="10" />
+		</item>
+		<item id="" name="glassFrame">
+			<property name="Extends" value="itemMaster" />
+			<property name="CustomIcon" value="ui_game_symbol_glassFrame" />
+			<property name="DescriptionKey" value="glassFrameDesc" />
+			<property name="Stacknumber" value="1" />
+			<property name="Material" value="Mglass" />
+			<property name="Weight" value="10" />
+		</item>
+		<item id="" name="glassEye">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="Mglass" />
+			<property name="CustomIcon" value="ui_game_symbol_glassEye" />
+			<property name="DescriptionKey" value="glassEyeDesc" />
+			<property name="Weight" value="5" />
+		</item>	
+		<item id="" name="glassBong">
+			<property name="Extends" value="itemMaster" />
+			<property name="Material" value="Mglass" />
+			<property name="CustomIcon" value="ui_game_symbol_glassWaterBong" />
+			<property name="DescriptionKey" value="glassWaterBongDesc" />
+			<property name="Weight" value="5" />
+		</item>	
+	</append>
+</configs>

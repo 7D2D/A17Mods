@@ -1,0 +1,20 @@
+<configs>
+	
+	<append xpath="/recipes">		
+		<recipe name="scrapRubber" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true">
+			<wildcard_forge_category />
+		</recipe>
+		<recipe name="scrapSteel" count="1" tooltip="ttScrapMetalSteel" always_unlocked="true">
+			<wildcard_forge_category />
+		</recipe>
+		<recipe name="scrapSteel" count="1" craft_area="forge" material_based="true" craft_time="1" craft_exp_gain="0" always_unlocked="true"> 
+			<ingredient name="unit_iron" count="2" />
+		</recipe>
+<!-- 		<recipe name="scrapSteel" count="1" craft_area="blastFurnace" material_based="true" craft_time="1" craft_exp_gain="0"> - used if steel can be smelted in your mod
+				<ingredient name="unit_steel" count="1" />
+			</recipe>	-->
+<!--		<recipe name="scrapPlastics" count="1" craft_area="blastFurnace" material_based="true" craft_time="1" craft_exp_gain="0"> - used if plastic can be smelted in your mod
+				<ingredient name="unit_plastic" count="1" />
+			</recipe>	-->
+	</append>
+</configs>

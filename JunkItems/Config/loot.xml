@@ -1,0 +1,174 @@
+<configs>
+	
+	<insertAfter xpath="/lootcontainers/lootgroup[@name='empty']">
+			<lootgroup name="junkPersonal"> <!-- This is good for zombie loot groups to limit items to those that reasonably might be carried.   -->
+				<item group="paperJunk" />
+				<item name="glassPerfume" />
+				<item name="glassCompact" />
+				<item name="glassEye" />
+				<item name="glassBong" />
+				<item name="electronic3ds" />
+				<item name="electronicCellPhone" />
+				<item name="electronicBrokenIPod" />
+				<item name="ironSoldier" />
+				<item name="ironPaperClips" count="1,6" />
+				<item name="ironScissors" />
+				<item name="woodSoldier" />
+				<item name="woodWhistle" />
+				<item name="woodYoyo" />
+				<item name="clothTeddyBear" />
+				<item name="clothRags" />
+				<item name="clothOldShoe" />
+				<item name="plasticSoldier" />
+				<item name="plasticLegos" />
+				<item name="plasticHairBrush" />
+				<item name="plasticCondom" />
+				<item name="plasticToothBrush" />
+				<item name="plasticLighter" />
+				<item name="plasticShoppingBag" />
+				<item name="electricVibrator" />
+				<item name="mechanicalOldWatch" />
+				<item name="rubberDoll" />
+				<item name="rubberDuck" />
+				<item name="rubberChicken" />
+				<item name="rubberBands" />
+				<item name="steelSpoon" />
+				<item name="steelBracelet" />
+				<item name="steelButterKnife" />
+				<item name="steelSpoon" />
+				<item name="steelFork" />
+			</lootgroup>
+			<lootgroup name="itemJunk">
+				<item group="paperJunk" />
+				<item group="steelJunk" />
+				<item group="rubberJunk" />
+				<item group="mechanicalJunk" />
+				<item group="electricJunk" />
+				<item group="clothJunk" />
+				<item group="plasticJunk" />
+				<item group="woodJunk" />
+				<item group="stoneJunk" />
+				<item group="brassJunk" />
+				<item group="ironJunk" />
+				<item group="electronicJunk" />
+				<item group="glassJunk" />
+				<item group="leadJunk" />
+			</lootgroup>
+			<lootgroup name="paperJunk">
+				<item name="paperPlayingCards" />
+				<item name="paperNews" />
+				<item name="paperToilet" />
+				<item name="paperGoggles" />
+				<item name="paperMatches" />
+				<item name="oldCash" />
+			</lootgroup>
+			<lootgroup name="leadJunk">
+				<item name="leadSoldier" />
+				<item name="leadMusketBalls" count="1,6" />
+				<item name="leadSolder" />
+				<item name="resourceTrophy2" />
+				<item name="resourceFishingWeight" />
+			</lootgroup>
+			<lootgroup name="glassJunk">
+				<item name="glassPerfume" />
+				<item name="glassCompact" />
+				<item name="glassFrame" />
+				<item name="glassEye" />
+				<item name="glassBong"  />
+			</lootgroup>
+			<lootgroup name="electronicJunk">
+				<item name="electronic3ds" />
+				<item name="electronicCellPhone" />
+				<item name="electronicClockRadio" />
+				<item name="electronicBrokenIpad" />
+				<item name="electronicBrokenIPod" />
+				<item name="electronicBrokenLapTop" />
+			</lootgroup>
+			<lootgroup name="ironJunk">
+				<item name="ironSoldier" />
+				<item name="ironPaperClips" count="1,6" />
+				<item name="ironWeight" />
+				<item name="ironHinge" />
+				<item name="resourceTrophy3" />
+				<item name="ironHairSpray" />
+				<item name="ironScissors" />
+				<item name="facialPiercings" />
+				<item name="drinkCanEmpty" />
+				<item name="resourceHubcap"  />
+				<item name="resourceCandyTin" />
+			</lootgroup>
+			<lootgroup name="brassJunk">
+				<item name="brassHinge" />
+				<item name="brassMonkey"/>
+				<item name="brassCowBell" />
+				<item name="resourceTrophy1" />
+				<item name="resourceCandleStick" />
+				<item name="resourceDoorKnob" />
+			</lootgroup>
+			<lootgroup name="stoneJunk">
+				<item name="stonePlate" />
+				<item name="stonePaperWeight" />
+				<item name="stoneStatue" />
+				<item name="stoneCrackedAshTray" />
+				<item name="stonePissPot" />
+			</lootgroup>
+			<lootgroup name="woodJunk">
+				<item name="woodSoldier" />
+				<item name="woodWhistle" />
+				<item name="woodSpoon" />
+				<item name="woodYoyo" />
+			</lootgroup>
+			<lootgroup name="clothJunk">
+				<item name="clothTeddyBear" />
+				<item name="clothRags" count="1,3" />
+				<item name="clothRug" />
+				<item name="clothOldBlanket" />
+				<item name="clothOldShoe" />
+				<item name="clothChewedDogCollar" />
+			</lootgroup>
+			<lootgroup name="plasticJunk">
+				<item name="plasticCds" />
+				<item name="plasticSoldier" />
+				<item name="plasticLegos" />
+				<item name="plasticKite" />
+				<item name="plasticFrisbee" />
+				<item name="plasticHairBrush" />
+				<item name="plasticCondom" />
+				<item name="plasticToothBrush" />
+				<item name="plasticLighter" />
+				<item name="plasticShoppingBag" />
+			</lootgroup>
+			<lootgroup name="electricJunk">
+				<item name="electricShaver" />
+				<item name="electricToyMotor" />
+				<item name="electricToaster" />
+				<item name="electricVibrator" />
+				<item name="electricBlender" />
+			</lootgroup>
+			<lootgroup name="mechanicalJunk">
+				<item name="mechanicalKeyPad" />
+				<item name="mechanicalOldWatch" />
+				<item name="mechanicalTypeWriter" />
+			</lootgroup>
+			<lootgroup name="rubberJunk">
+				<item name="rubberDoll" />
+				<item name="rubberDuck" />
+				<item name="rubberChicken" />
+				<item name="rubberBands" />
+				<item name="rubberOldRainBoot" />
+			</lootgroup>
+			<lootgroup name="steelJunk">
+				<item name="steelHinge" />
+				<item name="steelSpoon" />
+				<item name="steelBracelet" />
+				<item name="steelDogBowl" />
+				<item name="steelButterKnife" />
+				<item name="steelSpoon" />
+				<item name="steelFork" />
+			</lootgroup>
+		</insertAfter>
+		<append xpath="/lootcontainers/lootgroup[@name='junk']">
+				<item group="itemJunk" />
+		</append>
+	
+</configs>
