@@ -9,6 +9,8 @@
 				<property name="CustomIcon" value="WoodBat" />
 				<property name="HoldType" value="2"/> 
 				<property name="Material" value="Mwood"/>
+				<property name="RepairTools" value=""/>
+				<property name="DegradationBreaksAfter" value="true"/>
 				<effect_group name="Base Effects">
 					<passive_effect name="MaxRange" operation="base_set" value="2.5"/>
 					<passive_effect name="BlockRange" operation="base_set" value="3"/>
@@ -16,7 +18,7 @@
 					<passive_effect name="BlockDamage" operation="base_set" value="5"/>
 					<passive_effect name="AttacksPerMinute" operation="perc_add" value="0" tags="primary"/>
 					<passive_effect name="StaminaLoss" operation="base_set" value="10" tags="primary"/>
-					<passive_effect name="DegradationMax" operation="base_set" value="70,200" tier="1,6"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="300,1500" tier="1,6"/>
 					<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 					<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 					<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
@@ -46,6 +48,8 @@
 				<property name="CustomIcon" value="AlumBat" />
 				<property name="HoldType" value="2"/> 
 				<property name="Material" value="Mmetal"/>
+				<property name="RepairTools" value=""/>
+				<property name="DegradationBreaksAfter" value="true"/>
 				<effect_group name="Base Effects">
 					<passive_effect name="MaxRange" operation="base_set" value="2.5"/>
 					<passive_effect name="BlockRange" operation="base_set" value="3"/>
@@ -53,7 +57,7 @@
 					<passive_effect name="BlockDamage" operation="base_set" value="5"/>
 					<passive_effect name="AttacksPerMinute" operation="perc_add" value="0" tags="primary"/>
 					<passive_effect name="StaminaLoss" operation="base_set" value="10" tags="primary"/>
-					<passive_effect name="DegradationMax" operation="base_set" value="70,200" tier="1,6"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="400,2000" tier="1,6"/>
 					<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 					<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 					<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
@@ -84,6 +88,8 @@
 				<property name="CustomIcon" value="SawBat" />
 				<property name="Material" value="Mmetal"/>
 				<property name="HoldType" value="2"/> 
+				<property name="RepairTools" value=""/>
+				<property name="DegradationBreaksAfter" value="true"/>			
 				<effect_group name="Base Effects">
 					<passive_effect name="MaxRange" operation="base_set" value="2.5"/>
 					<passive_effect name="BlockRange" operation="base_set" value="3"/>
@@ -91,7 +97,7 @@
 					<passive_effect name="BlockDamage" operation="base_set" value="7"/>
 					<passive_effect name="AttacksPerMinute" operation="perc_add" value="0" tags="primary"/>
 					<passive_effect name="StaminaLoss" operation="base_set" value="12" tags="primary"/>
-					<passive_effect name="DegradationMax" operation="base_set" value="70,200" tier="1,6"/>
+					<passive_effect name="DegradationMax" operation="base_set" value="500,3000" tier="1,6"/>
 					<passive_effect name="ModSlots" operation="base_set" value="0,5" tier="1,6"/>
 					<passive_effect name="ModPowerBonus" operation="perc_add" value=".15" tags="EntityDamage,BlockDamage"/>
 					<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
