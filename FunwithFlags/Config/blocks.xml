@@ -1,0 +1,64 @@
+<configs>
+		<append xpath="/blocks">	
+			<block name="FlagUSA">
+				<property name="Material" value="Mmetal"/>
+				<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+				<drop event="Destroy" count="0"/>
+				<property name="DescriptionKey" value="decorationBlockGroupDesc"/>
+				<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#@modfolder:Resources/Flags.unity3d?FlagUSA_X" />
+				<property name="CustomIcon" value="FlagUSA" />
+				<property name="CanPickup" value="true" />
+			</block>
+			<block name="FlagRepo">
+				<property name="Material" value="Mmetal"/>
+				<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+				<drop event="Destroy" count="0"/>
+				<property name="DescriptionKey" value="decorationBlockGroupDesc"/>
+				<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#@modfolder:Resources/Flags.unity3d?FlagRepo_X" />
+				<property name="CustomIcon" value="FlagRepo" />
+				<property name="CanPickup" value="true" />
+			</block>
+			<block name="FlagInfection">
+				<property name="Material" value="Mmetal"/>
+				<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+				<drop event="Destroy" count="0"/>
+				<property name="DescriptionKey" value="decorationBlockGroupDesc"/>
+				<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#@modfolder:Resources/Flags.unity3d?FlagInfection_X" />
+				<property name="CustomIcon" value="FlagInfection" />
+				<property name="CanPickup" value="true" />
+			</block>
+			<block name="FlagRadiation">
+				<property name="Material" value="Mmetal"/>
+				<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+				<drop event="Destroy" count="0"/>
+				<property name="DescriptionKey" value="decorationBlockGroupDesc"/>
+				<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#@modfolder:Resources/Flags.unity3d?FlagRadiation_X" />
+				<property name="CustomIcon" value="FlagRadiation" />
+				<property name="CanPickup" value="true" />
+			</block>
+			<block name="FlagSheldon">
+				<property name="Material" value="Mmetal"/>
+				<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+				<drop event="Destroy" count="0"/>
+				<property name="DescriptionKey" value="decorationBlockGroupDesc"/>
+				<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#@modfolder:Resources/Flags.unity3d?FlagSheldon_X" />
+				<property name="CustomIcon" value="FlagSheldon" />
+				<property name="CanPickup" value="true" />
+			</block>
+			<block name="FlagGuppy">
+				<property name="Material" value="Mmetal"/>
+				<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+				<drop event="Destroy" count="0"/>
+				<property name="DescriptionKey" value="decorationBlockGroupDesc"/>
+				<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#@modfolder:Resources/Flags.unity3d?FlagGuppy_X" />
+				<property name="CustomIcon" value="FlagGuppy" />
+				<property name="CanPickup" value="true" />
+			</block>			
+		</append>
+</configs>
