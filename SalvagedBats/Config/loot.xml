@@ -1,6 +1,6 @@
 <configs>
 	<insertAfter xpath="/lootcontainers/lootgroup[@name='modMeleeT3']">
-		<lootgroup name="modBatsT1"> <!-- This is good for zombie loot groups to limit items to those that reasonably might be carried.   -->
+		<lootgroup name="modBatsT1"> 
 			<item name="modHoeBat"/>
 			<item name="modPickBat"/>
 			<item name="modBarbedBat"/>
@@ -8,7 +8,7 @@
 			<item name="modSmallGearBat"/>
 			<item name="modPommelPantherBat"/>					
 		</lootgroup>
-		<lootgroup name="modBatsT2"> <!-- This is good for zombie loot groups to limit items to those that reasonably might be carried.   -->
+		<lootgroup name="modBatsT2"> 
 			<item name="modCrownBat"/>
 			<item name="modNautilusBat"/>
 			<item name="modMaceBat"/>
@@ -16,7 +16,7 @@
 			<item name="modWeightGearBat"/>
 			<item name="modGripLeatherBat"/>					
 		</lootgroup>
-		<lootgroup name="modBatsT3"> <!-- This is good for zombie loot groups to limit items to those that reasonably might be carried.   -->
+		<lootgroup name="modBatsT3">
 			<item name="modBeanCanBat"/>
 			<item name="modAxeBat"/>
 			<item name="modSpeedBallBat"/>
@@ -36,8 +36,12 @@
 		<item group="modBatsT3" />
 	</append>
 	<append xpath="/lootcontainers/lootgroup[@name='weaponsMelee']">
-		<item name="meleeWoodBat" prob="0.2"/>
-		<item name="meleeAluminumBat" prob="0.2"/>
+		<item name="meleeWoodBat" mods="head,sweetspot,effects,grip,pommel" mod_chance=".50"/> 
+		<item name="meleeAluminumBat" mods="head,sweetspot,effects,grip,pommel" mod_chance=".50"/> 
 		<item name="MeleeBatLegendarySawBat" prob="0.05"/>
 	</append>	
-</configs>
+<!--	<append xpath="/lootcontainers/lootgroup[@name='junk']">
+		<item name="meleeWoodBat" mods="head,sweetspot,effects,grip,pommel" mod_chance=".90"/> 
+		<item name="meleeAluminumBat" mods="head,sweetspot,effects,grip,pommel" mod_chance=".90"/>  For testing lootdrops  
+	</append>	-->
+</configs> 

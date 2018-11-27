@@ -70,7 +70,7 @@
 			
 	<!-- Head Mods  -->	
 	
-			<item_modifier name="modBeanCanBat" installable_tags="bat" modifier_tags="head" type="attachment" blocking_tags="notbraced" rarity="0.5"> <!-- Plan B is use notbraced for the install tag but tag overrides do not work yet -->
+			<item_modifier name="modBeanCanBat" installable_tags="bat" modifier_tags="head" type="attachment" blocking_tags="notbraced" rarity="0.25"> <!-- Plan B is use notbraced for the install tag but tag overrides do not work yet -->
 				<item_property_overrides name="*">
 					<property name="Material" value="Mmetal"/> <!-- Material and tag over rides do not work yet -->
 					<property name="Damage_type" value="Piercing"/>
@@ -109,7 +109,7 @@
 				</effect_group>
 			</item_modifier>			
 	
-			<item_modifier name="modHoeBat" installable_tags="bat" modifier_tags="head" type="attachment" rarity="0.5">
+			<item_modifier name="modHoeBat" installable_tags="bat" modifier_tags="head" type="attachment" rarity="0.75">
 				<item_property_overrides name="*">
 					<property name="Material" value="Mmetal"/>
 				</item_property_overrides>					
@@ -135,7 +135,7 @@
 				</effect_group>
 				<property name="Meshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatHoe_X" />			
 			</item_modifier>	
-			<item_modifier name="modPickBat" installable_tags="bat" modifier_tags="head" type="attachment" rarity="0.5">
+			<item_modifier name="modPickBat" installable_tags="bat" modifier_tags="head" type="attachment" rarity="0.75">
 				<item_property_overrides name="*">
 					<property name="Material" value="Mmetal"/>
 					<property name="Damage_type" value="Piercing"/>
@@ -205,7 +205,7 @@
 					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatNautilus_X" parent_transform="Attachments/Grip" local_offset="0,0,0" />
 				</effect_group>
 			</item_modifier>
-			<item_modifier name="modBarbedBat" installable_tags="bat" modifier_tags="head" type="attachment" rarity="0.5">
+			<item_modifier name="modBarbedBat" installable_tags="bat" modifier_tags="head" type="attachment" rarity="0.75">
 				<property name="CustomIcon" value="modBarbedBat"/>
 				<property name="HoldType" value="21"/> <!-- 21 open hand -->
 				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatBarbedHold_X" />
@@ -227,7 +227,7 @@
 					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatBarbed_X" parent_transform="Attachments/Grip" local_offset="0,0,0" />
 				</effect_group> <!-- CC 4.0 Licenced mesh by minhdaow -->	
 			</item_modifier>				
-			<item_modifier name="modAxeBat" installable_tags="bat" modifier_tags="head" type="attachment" rarity="0.5">
+			<item_modifier name="modAxeBat" installable_tags="bat" modifier_tags="head" type="attachment" rarity="0.25">
 				<property name="CustomIcon" value="modAxeBat"/>
 				<property name="HoldType" value="21"/> <!-- 21 open hand -->
 				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatAxeHold_X" />
@@ -295,7 +295,7 @@
 					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatKanabo_X" parent_transform="Attachments/Grip" local_offset="0,0,0" />
 				</effect_group>
 			</item_modifier>
-			<item_modifier name="modNailedBat" installable_tags="bat" modifier_tags="head" type="attachment" rarity="0.5">
+			<item_modifier name="modNailedBat" installable_tags="bat" modifier_tags="head" type="attachment" rarity="0.75">
 				<property name="CustomIcon" value="modNailedBat"/>
 				<property name="HoldType" value="45"/> <!-- Sack -->
 				<property name="HandMeshfile" value="Items/Misc/sackPrefab" />
@@ -320,7 +320,7 @@
 	
 <!-- SweetSpot Mods  -->
 
-			<item_modifier name="modSmallGearBat" installable_tags="bat" modifier_tags="sweetspot" type="attachment" rarity="0.5">
+			<item_modifier name="modSmallGearBat" installable_tags="bat" modifier_tags="sweetspot" type="attachment" rarity="0.75">
 				<property name="CustomIcon" value="modSmallGearBat"/>
 				<property name="HoldType" value="21"/> 
 				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatSmallGearHold_X" />
@@ -336,7 +336,7 @@
 					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatSmallGear_X" parent_transform="Attachments/Grip" local_offset="0,0,0" />
 				</effect_group>
 			</item_modifier>
-			<item_modifier name="modSpeedBallBat" installable_tags="bat" modifier_tags="sweetspot" type="attachment" rarity="0.5">
+			<item_modifier name="modSpeedBallBat" installable_tags="bat" modifier_tags="sweetspot" type="attachment" rarity="0.25">
 				<property name="CustomIcon" value="modSpeedBallBat"/>
 				<property name="HoldType" value="21"/> 
 				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatSpeedBallHold_X" />
@@ -372,7 +372,7 @@
 			
 <!-- Special Effects Mods -->
 
-			<item_modifier name="modBurningBat" installable_tags="bat" modifier_tags="fire" type="attachment" rarity="0.5">
+			<item_modifier name="modBurningBat" installable_tags="bat" modifier_tags="effects" type="attachment" rarity="0.25">
 				<property name="CustomIcon" value="modBurningBat"/>
 				<property name="Stacknumber" value="1"/>
 				<property name="PickupJournalEntry" value="augmentGunsTip"/>				<property name="Stacknumber" value="1"/>
@@ -388,7 +388,7 @@
 				</effect_group>
 			</item_modifier>
 			
-			<item_modifier name="modSparkyBat" installable_tags="bat" modifier_tags="fire" type="attachment" rarity="0.5">
+			<item_modifier name="modSparkyBat" installable_tags="bat" modifier_tags="effects" type="attachment" rarity="0.25">
 				<property name="CustomIcon" value="modSparkyBat"/>
 				<property name="Stacknumber" value="1"/>
 				<property name="PickupJournalEntry" value="augmentGunsTip"/>				
@@ -404,7 +404,7 @@
 			</item_modifier>			
 <!-- Grip Mods  -->	
 
-			<item_modifier name="modGripRubberBat" installable_tags="bat" modifier_tags="grip" type="attachment" rarity="0.5">
+			<item_modifier name="modGripRubberBat" installable_tags="bat" modifier_tags="grip" type="attachment" rarity="0.25">
 				<property name="CustomIcon" value="modGripRubberBat"/>
 				<property name="HoldType" value="21"/> <!-- 21 open hand -->
 				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatGripRubberHold_X" />
@@ -437,7 +437,7 @@
 			
 <!-- Pommel Mods  -->
 
-			<item_modifier name="modPommelHoundBat" installable_tags="bat" modifier_tags="pommel" type="attachment" rarity="0.5">
+			<item_modifier name="modPommelHoundBat" installable_tags="bat" modifier_tags="pommel" type="attachment" rarity="0.25">
 				<property name="CustomIcon" value="modPommelHoundBat"/>
 				<property name="HoldType" value="21"/> <!-- 21 open hand -->
 				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatHoundPommelHold_X" />
@@ -455,7 +455,7 @@
 					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatHoundPommel_X" parent_transform="Attachments/Grip" local_offset="0,0,0" />
 				</effect_group>
 			</item_modifier>
-			<item_modifier name="modPommelPantherBat" installable_tags="bat" modifier_tags="pommel" type="attachment" rarity="0.5">
+			<item_modifier name="modPommelPantherBat" installable_tags="bat" modifier_tags="pommel" type="attachment" rarity="0.75">
 				<property name="CustomIcon" value="modPommelPantherBat"/>
 				<property name="HoldType" value="21"/> <!-- 21 open hand -->
 				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?BatPantherPommelHold_X" />
