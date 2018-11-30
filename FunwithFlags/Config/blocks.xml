@@ -69,6 +69,16 @@
 				<property name="Model" value="#@modfolder:Resources/Flags.unity3d?FlagSphereii_X" />
 				<property name="CustomIcon" value="FlagSphereii" />
 				<property name="CanPickup" value="true" />
-			</block>			
+			</block>
+			<block name="FlagLooted">
+				<property name="Material" value="Mmetal"/>
+				<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+				<drop event="Destroy" count="0"/>
+				<property name="DescriptionKey" value="decorationBlockGroupDesc"/>
+				<property name="Shape" value="ModelEntity" />
+				<property name="Model" value="#@modfolder:Resources/Flags.unity3d?FlagLooted_X" />
+				<property name="CustomIcon" value="FlagLooted" />
+				<property name="CanPickup" value="true" />
+			</block>				
 		</append>
 </configs>
