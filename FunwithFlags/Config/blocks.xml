@@ -61,6 +61,12 @@
 			<property name="Shape" value="ModelEntity" />
 			<property name="Model" value="#@modfolder:Resources/Flags.unity3d?FlagLooted_X" />
 			<property name="CustomIcon" value="FlagLooted" />
-		</block>				
+		</block>
+		<block name="FlagLootedMac">
+			<property name="Extends" value="FlagUSA"/>			
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/Flags.unity3d?FlagLootedMac_X" />
+			<property name="CustomIcon" value="FlagLooted" />
+		</block>
 	</append>
 </configs>
