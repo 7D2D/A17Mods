@@ -1,0 +1,55 @@
+<configs>
+	<append xpath="/blocks">
+			<block name="SalvagedLathe">
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/SalvagedLathe.unity3d?SalvagedLathe_X"/>
+			<property name="Class" value="Workstation"/>
+			<property name="Material" value="Mwood"/>
+			<property name="MaxDamage" value="800"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="DisplayType" value="blockMulti" />
+			<property name="MultiBlockDim" value="2,2,2"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>			
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="HeatMapStrength" value="0.5"/>
+			<property name="HeatMapTime" value="1200"/>
+			<property name="HeatMapFrequency" value="25"/>
+			<!--<property name="RecipeList" value="backpack, workbench"/>-->
+			<!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
+			<property name="Stacknumber" value="1"/>
+			<property name="CustomIcon" value="SalvagedLathe"/>
+			<property class="Workstation">
+				<property name="Modules" value="output"/>
+				<property name="CraftingAreaRecipes" value="SalvagedLathe"/>
+			</property>
+			<property name="WorkstationIcon" value="ui_game_symbol_workbench" />
+			<property name="OpenSound" value="open_workbench" />
+			<property name="CloseSound" value="close_workbench" />
+			<property name="WorkstationJournalTip" value="workbenchTip" />
+
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="5"/>
+				<property name="resourceMechanicalParts" value="10"/>
+				<property name="resourceWood" value="50"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="20" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceForgedIron" count="2" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="2" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="TakeDelay" value="15"/>
+			<property name="DescriptionKey" value="SalvagedLatheDesc"/>
+			<property name="EconomicValue" value="776"/>
+			<property name="Group" value="Building,Science"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+			<property name="SortOrder1" value="70i0"/>
+		</block>			
+
+	</append>
+</configs>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
 	<ModInfo>
-		<Name value="SalvagedBats" />
-		<Description value="Salvaged Bats Mod" />
+		<Name value="Salvaged Bats (1K Texures)" />
+		<Description value="Salvaged Bats Mod with lower texture size" />
 		<Author value="Xyth" />
-		<Version value="1.11" />
+		<Version value="1.2" />
 		<Website value="http://sdxmods.com" />
 	</ModInfo>
 </xml>

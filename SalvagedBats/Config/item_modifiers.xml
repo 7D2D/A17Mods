@@ -104,8 +104,8 @@
 					<requirement name="RandomRoll" seed_type="Random" target="self" min_max="1,100" operation="LTE" value="50"/>
 						<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
 				</effect_group>
-				<effect_group name="SpecialEffects">  <!-- CC 4.0 Licenced meshes by Horus3dart (can)filipeb2011 (blade) and Alex Filip (clamp) -->
-					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatBeanCan_X" parent_transform="Attachments/Grip" local_offset="0,0,0" />
+				<effect_group name="SpecialEffects">  <!-- CC 4.0 Licensed meshes by Horus3dart (can)filipeb2011 (blade) and Alex Filip (clamp) -->
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#@modfolder:Resources/salvagedbats.unity3d?BatBeanCan_X" parent_transform="Attachments/Grip" local_offset="0,0,0" /> <!-- This is where the modifier is attached to the base item, in this case a bat  -->
 				</effect_group>
 			</item_modifier>			
 	
@@ -147,7 +147,7 @@
 				<property name="Stacknumber" value="1"/>
 				<property name="PickupJournalEntry" value="augmentGunsTip"/>
 				<effect_group name="Adding Some Effects">
-					<passive_effect name="MaxRange" operation="base_add" value="0.1"/>
+					<passive_effect name="MaxRange" operation="base_add" value="0.2"/>
 					<passive_effect name="BlockRange" operation="base_add" value="0.1"/>
 					<passive_effect name="EntityDamage" operation="base_add" value="7"/> 
 					<passive_effect name="BlockDamage" operation="base_add" value="4"/>
@@ -217,6 +217,9 @@
 					<passive_effect name="BlockRange" operation="base_add" value="0.0"/>
 					<passive_effect name="EntityDamage" operation="base_add" value="5"/> 
 					<passive_effect name="BlockDamage" operation="base_add" value="1"/>
+					<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding">
+						<requirement name="RandomRoll" target="self" min_max="1,100" operation="LTE" value="10"/>
+					</triggered_effect>
 				</effect_group>					
 				<effect_group name="Power Attack">
 					<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding">
@@ -237,8 +240,8 @@
 				<effect_group name="Adding Some Effects">
 					<passive_effect name="MaxRange" operation="base_add" value="0.2"/>
 					<passive_effect name="BlockRange" operation="base_add" value="0.2"/>
-					<passive_effect name="EntityDamage" operation="base_add" value="7"/> 
-					<passive_effect name="BlockDamage" operation="base_add" value="5"/>
+					<passive_effect name="EntityDamage" operation="base_add" value="9"/> 
+					<passive_effect name="BlockDamage" operation="base_add" value="8"/>
 				</effect_group>					
 				<effect_group name="Power Attack">
 					<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryBleeding">
@@ -285,6 +288,9 @@
 					<passive_effect name="BlockRange" operation="base_add" value="0.0"/>
 					<passive_effect name="EntityDamage" operation="base_add" value="7"/> 
 					<passive_effect name="BlockDamage" operation="base_add" value="3"/>
+					<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryStunned1">
+						<requirement name="RandomRoll" target="self" min_max="1,100" operation="LTE" value="15"/>
+					</triggered_effect>
 				</effect_group>				
 				<effect_group name="Power Attack">
 					<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryStunned1">
@@ -361,7 +367,7 @@
 				<property name="PickupJournalEntry" value="augmentGunsTip"/>				
 				<effect_group name="Power Attack">
 					<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryStunned1">
-						<requirement name="RandomRoll" target="self" min_max="1,100" operation="LTE" value="50"/>
+						<requirement name="RandomRoll" target="self" min_max="1,100" operation="LTE" value="75"/>
 					</triggered_effect>
 				</effect_group>
 				<effect_group name="SpecialEffects"> <!-- CC 4.0 Licenced mesh by rampolymagic -->

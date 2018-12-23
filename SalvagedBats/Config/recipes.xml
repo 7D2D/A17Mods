@@ -1,138 +1,128 @@
 <configs>
 	<append xpath="/recipes" >
-		<recipe name="modBeanCanBat" count="1" craft_area="workbench" tags="learnable">
-			<requirement name="ProgressionLevel" progression_name="perkYeahScience" operation="GTE" value="1"/>
-			<ingredient name="resourceForgedSteel" count="5"/>
-			<ingredient name="resourceGlue" count="5"/>
+		<recipe name="modBeanCanBat" count="1" craft_area="workbench" >
+			<ingredient name="modBeanCanBatSchematic" count="1"/>
+			<ingredient name="drinkCanEmpty" count="1"/>
 			<ingredient name="resourceMechanicalParts" count="5"/>
-			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="meleeToolHuntingKnife" count="1"/>
 		</recipe>
-		<recipe name="modHoeBat" count="1" craft_area="workbench" tags="learnable">
-			
-			<ingredient name="resourceForgedSteel" count="5"/>
+		<recipe name="modHoeBat" count="1" craft_area="workbench" craft_time="25" always_unlocked="true">
+			<ingredient name="meleeToolPickaxeIron" count="1"/>
 			<ingredient name="resourceGlue" count="5"/>
-			<ingredient name="resourceMechanicalParts" count="5"/>
-			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
 		</recipe>
-		<recipe name="modPickBat" count="1" craft_area="workbench" tags="learnable">
-			
-			<ingredient name="resourceForgedSteel" count="5"/>
+		<recipe name="modPickBat" count="1" craft_area="workbench" craft_time="25" always_unlocked="true">
+			<ingredient name="meleeToolPickaxeIron" count="1"/>
 			<ingredient name="resourceGlue" count="5"/>
-			<ingredient name="resourceMechanicalParts" count="5"/>
-			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
 		</recipe>
 		<recipe name="modCrownBat" count="1" craft_area="workbench" tags="learnable">
-			
-			<ingredient name="resourceForgedSteel" count="5"/>
+			<ingredient name="modCrownBatSchematic" count="1"/>
+			<ingredient name="resourceForgedIron" count="5"/>
 			<ingredient name="resourceGlue" count="5"/>
-			<ingredient name="resourceMechanicalParts" count="5"/>
-			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
 		</recipe>
 		<recipe name="modNautilusBat" count="1" craft_area="workbench" tags="learnable">
-			
-			<ingredient name="resourceForgedSteel" count="5"/>
-			<ingredient name="resourceGlue" count="5"/>
+			<ingredient name="modNautilusBatSchematic" count="1"/>
+			<ingredient name="resourceForgedSteel" count="6"/>
+			<ingredient name="resourceGlue" count="3"/>
 			<ingredient name="resourceMechanicalParts" count="5"/>
-			<ingredient name="resourceSpring" count="10"/>
 		</recipe>
 		<recipe name="modBarbedBat" count="1" craft_area="workbench" tags="learnable">
-<!--		<ingredient name="modMeleeClubBarbedWireSchematic" count="1"/> -->
-			<requirement name="ProgressionLevel" progression_name="perkYeahScience" operation="GTE" value="1"/>
-			<ingredient name="resourceForgedSteel" count="5"/>
-			<ingredient name="resourceGlue" count="5"/>
+			<ingredient name="modBarbedBatSchematic" count="1"/>
+			<ingredient name="barbedWireSheet" count="2"/>
+			<ingredient name="resourceGlue" count="3"/>
 			<ingredient name="resourceMechanicalParts" count="5"/>
-			<ingredient name="resourceSpring" count="10"/>
+			
 		</recipe>	
 		<recipe name="modAxeBat" count="1" craft_area="workbench" tags="learnable">
-			
+			<ingredient name="modAxeBatSchematic" count="1"/>			
 			<ingredient name="resourceForgedSteel" count="5"/>
-			<ingredient name="resourceGlue" count="5"/>
-			<ingredient name="resourceMechanicalParts" count="5"/>
-			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceGlue" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="2"/>
+			<ingredient name="resourceLeather" count="3"/>
 		</recipe>
 		<recipe name="modMaceBat" count="1" craft_area="workbench" tags="learnable">
-			
-			<ingredient name="resourceForgedSteel" count="5"/>
-			<ingredient name="resourceGlue" count="5"/>
+			<ingredient name="modMaceBatSchematic" count="1"/>			
+			<ingredient name="resourceForgedSteel" count="4"/>
+			<ingredient name="resourceGlue" count="2"/>
 			<ingredient name="resourceMechanicalParts" count="5"/>
-			<ingredient name="resourceSpring" count="10"/>
 		</recipe>
 		<recipe name="modKanaboBat" count="1" craft_area="workbench" tags="learnable">
-			
-			<ingredient name="resourceForgedSteel" count="5"/>
+			<ingredient name="modKanaboBatSchematic" count="1"/>		
+			<ingredient name="resourceScrapIron" count="15"/>
 			<ingredient name="resourceGlue" count="5"/>
-			<ingredient name="resourceMechanicalParts" count="5"/>
-			<ingredient name="resourceSpring" count="10"/>
 		</recipe>
 		<recipe name="modNailedBat" count="1" craft_area="workbench" tags="learnable">
-			
-			<ingredient name="resourceForgedSteel" count="5"/>
-			<ingredient name="resourceGlue" count="5"/>
-			<ingredient name="resourceMechanicalParts" count="5"/>
-			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="modNailedBatSchematic" count="1"/>		
+			<ingredient name="resourceNail" count="50"/>
 		</recipe>
 		<recipe name="modSmallGearBat" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="modSmallGearBatSchematic" count="1"/>			
+			<ingredient name="resourceForgedIron" count="1"/>
+			<ingredient name="resourceGlue" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
 			
-			<ingredient name="resourceForgedSteel" count="5"/>
-			<ingredient name="resourceGlue" count="5"/>
-			<ingredient name="resourceMechanicalParts" count="5"/>
-			<ingredient name="resourceSpring" count="10"/>
 		</recipe>
 		<recipe name="modSpeedBallBat" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="modSpeedBallBatSchematic" count="1"/>			
+			<ingredient name="resourceFeather" count="4"/>
+			<ingredient name="resourceGlue" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
 			
-			<ingredient name="resourceForgedSteel" count="5"/>
-			<ingredient name="resourceGlue" count="5"/>
-			<ingredient name="resourceMechanicalParts" count="5"/>
-			<ingredient name="resourceSpring" count="10"/>
 		</recipe>
 		<recipe name="modWeightGearBat" count="1" craft_area="workbench" tags="learnable">
-			
-			<ingredient name="resourceForgedSteel" count="5"/>
+			<ingredient name="modWeightGearBatSchematic" count="1"/>			
+			<ingredient name="resourceForgedSteel" count="2"/>
 			<ingredient name="resourceGlue" count="5"/>
-			<ingredient name="resourceMechanicalParts" count="5"/>
-			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="2"/>
+			
 		</recipe>
 		<recipe name="modBurningBat" count="1" craft_area="workbench" tags="learnable">
-			
+			<ingredient name="modBurningBatSchematic" count="1"/>
 			<ingredient name="resourceForgedSteel" count="5"/>
-			<ingredient name="resourceGlue" count="5"/>
-			<ingredient name="resourceMechanicalParts" count="5"/>
-			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="drinkJarGrainAlcohol" count="5"/>
+		
 		</recipe>	
 		<recipe name="modSparkyBat" count="1" craft_area="workbench" tags="learnable">
-			
+			<ingredient name="modSparkyBatSchematic" count="1"/>
 			<ingredient name="resourceForgedSteel" count="5"/>
-			<ingredient name="resourceGlue" count="5"/>
-			<ingredient name="resourceMechanicalParts" count="5"/>
-			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceGlue" count="1"/>
+			<ingredient name="resourceElectricParts" count="5"/>
+		
 		</recipe>
 		<recipe name="modGripRubberBat" count="1" craft_area="workbench" tags="learnable">
-			
-			<ingredient name="resourceForgedSteel" count="5"/>
-			<ingredient name="resourceGlue" count="5"/>
+			<ingredient name="modGripRubberBatSchematic" count="1"/>
+			<ingredient name="resourceGlue" count="8"/>
 			<ingredient name="resourceMechanicalParts" count="5"/>
-			<ingredient name="resourceSpring" count="10"/>
 		</recipe>
 		<recipe name="modGripLeatherBat" count="1" craft_area="workbench" tags="learnable">
-			
-			<ingredient name="resourceForgedSteel" count="5"/>
-			<ingredient name="resourceGlue" count="5"/>
-			<ingredient name="resourceMechanicalParts" count="5"/>
-			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="modGripLeatherBatSchematic" count="1"/>
+			<ingredient name="resourceGlue" count="2"/>
+			<ingredient name="resourceLeather" count="4"/>
 		</recipe>
 		<recipe name="modPommelHoundBat" count="1" craft_area="workbench" tags="learnable">
-			
+			<ingredient name="modPommelHoundBatSchematic" count="1"/>			
 			<ingredient name="resourceForgedSteel" count="5"/>
-			<ingredient name="resourceGlue" count="5"/>
-			<ingredient name="resourceMechanicalParts" count="5"/>
-			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceGlue" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
 		</recipe>
 		<recipe name="modPommelPantherBat" count="1" craft_area="workbench" tags="learnable">
-			
+			<ingredient name="modPommelPantherBatSchematic" count="1"/>			
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceGlue" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="1"/>
+		</recipe>
+		<recipe name="SalvagedLathe" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="SalvagedLatheSchematic" count="1"/>		
 			<ingredient name="resourceForgedSteel" count="5"/>
 			<ingredient name="resourceGlue" count="5"/>
 			<ingredient name="resourceMechanicalParts" count="5"/>
-			<ingredient name="resourceSpring" count="10"/>
+			<ingredient name="resourceWood" count="40"/>
+		</recipe>		
+		<recipe name="meleeWoodBat" count="1" craft_area="SalvagedLathe" tags="learnable">
+			<ingredient name="meleeWoodBatSchematic" count="1"/>		
+			<ingredient name="resourceWood" count="6"/>
 		</recipe>
 	</append>
 </configs>

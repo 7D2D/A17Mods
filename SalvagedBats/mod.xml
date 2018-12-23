@@ -1,9 +1,9 @@
 <mod>
 	<info>
 		<author>Xyth</author>
-		<name>SalvagedBats</name>
-		<description>Salvaged Bats Mod</description>
-		<mod_version>1.11</mod_version>
+		<name>Salvaged Bats (1K Texures)</name>
+		<description>Salvaged Bats Mod with lower texture size</description>
+		<mod_version>1.2</mod_version>
 		<game_version>17.0</game_version>
 		<launcher_version>0.7.3</launcher_version>
 	</info>

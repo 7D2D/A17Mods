@@ -35,6 +35,28 @@
 	<append xpath="/lootcontainers/lootgroup[@name='modAllT3']">
 		<item group="modBatsT3" />
 	</append>
+		<append xpath="/lootcontainers/lootgroup[@name='commonBooks']">
+			<item name="modBarbedBatSchematic"/>
+			<item name="modNailedBatSchematic"/>
+			<item name="modSmallGearBatSchematic"/>
+			<item name="modPommelPantherBatSchematic"/>	
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='rareBooks']">
+			<item name="modCrownBatSchematic"/>
+			<item name="modNautilusBatSchematic"/>
+			<item name="modMaceBatSchematic"/>
+			<item name="modKanaboBatSchematic"/>
+			<item name="modWeightGearBatSchematic"/>
+			<item name="modGripLeatherBatSchematic"/>	
+			<item name="modBeanCanBatSchematic"/>
+			<item name="modAxeBatSchematic"/>
+			<item name="modSpeedBallBatSchematic"/>
+			<item name="modBurningBatSchematic"/>
+			<item name="modSparkyBatSchematic"/>					
+			<item name="modPommelHoundBatSchematic"/>
+			<item name="modGripRubberBatSchematic"/>				
+	</append>	
+	
 	<append xpath="/lootcontainers/lootgroup[@name='weaponsMelee']">
 		<item name="meleeWoodBat" mods="head,sweetspot,effects,grip,pommel" mod_chance=".50"/> 
 		<item name="meleeAluminumBat" mods="head,sweetspot,effects,grip,pommel" mod_chance=".50"/> 

@@ -14,7 +14,7 @@
 				<effect_group name="Base Effects">
 					<passive_effect name="MaxRange" operation="base_set" value="2.5"/>
 					<passive_effect name="BlockRange" operation="base_set" value="3"/>
-					<passive_effect name="EntityDamage" operation="base_set" value="20"/> <!-- meleeClubWood -->
+					<passive_effect name="EntityDamage" operation="base_set" value="30"/> <!-- meleeClubWood -->
 					<passive_effect name="BlockDamage" operation="base_set" value="5"/>
 					<passive_effect name="AttacksPerMinute" operation="perc_add" value="0" tags="primary"/>
 					<passive_effect name="StaminaLoss" operation="base_set" value="10" tags="primary"/>
@@ -24,8 +24,8 @@
 					<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 				</effect_group>
 				<effect_group name="Power Attack">
-					<passive_effect name="EntityDamage" operation="perc_add" value="1.3" tags="secondary"/>
-					<passive_effect name="BlockDamage" operation="perc_add" value="2" tags="secondary"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+					<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 					<passive_effect name="AttacksPerMinute" operation="perc_add" value="0" tags="secondary"/>
 					<passive_effect name="StaminaLoss" operation="base_add" value="15" tags="secondary"/>
 					<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
@@ -53,7 +53,7 @@
 				<effect_group name="Base Effects">
 					<passive_effect name="MaxRange" operation="base_set" value="2.5"/>
 					<passive_effect name="BlockRange" operation="base_set" value="3"/>
-					<passive_effect name="EntityDamage" operation="base_set" value="25"/> <!-- meleeClubWood -->
+					<passive_effect name="EntityDamage" operation="base_set" value="35"/> <!-- meleeClubWood -->
 					<passive_effect name="BlockDamage" operation="base_set" value="5"/>
 					<passive_effect name="AttacksPerMinute" operation="perc_add" value="0" tags="primary"/>
 					<passive_effect name="StaminaLoss" operation="base_set" value="10" tags="primary"/>
@@ -63,8 +63,8 @@
 					<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 				</effect_group>
 				<effect_group name="Power Attack">
-					<passive_effect name="EntityDamage" operation="perc_add" value="1.3" tags="secondary"/>
-					<passive_effect name="BlockDamage" operation="perc_add" value="2" tags="secondary"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+					<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 					<passive_effect name="AttacksPerMinute" operation="perc_add" value="0" tags="secondary"/>
 					<passive_effect name="StaminaLoss" operation="base_add" value="15" tags="secondary"/>
 					<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
@@ -103,8 +103,8 @@
 					<passive_effect name="ModPowerBonus" operation="base_add" value="200" tags="EconomicValue"/>
 				</effect_group>
 				<effect_group name="Power Attack">
-					<passive_effect name="EntityDamage" operation="perc_add" value="1.3" tags="secondary"/>
-					<passive_effect name="BlockDamage" operation="perc_add" value="2" tags="secondary"/>
+					<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+					<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
 					<passive_effect name="AttacksPerMinute" operation="perc_add" value="0" tags="secondary"/>
 					<passive_effect name="StaminaLoss" operation="base_add" value="15" tags="secondary"/>
 					<triggered_effect trigger="onSelfSecondaryActionStart" action="PlaySound" target="self" sound="player1painlg">
@@ -118,16 +118,120 @@
 
 					<triggered_effect trigger="onSelfSecondaryActionStart" action="AddJournalEntry" journal="powerAttackTip"/>
 				</effect_group>
+			</item>	
+			<item name="modBeanCanBatSchematic">
+				<property name="Extends" value="schematicMaster"/>
+				<property name="CustomIcon" value="schematicMaster" />
+				<property name="DescriptionKey" value="schematicMaster2Desc"/>
+				<property name="EconomicValue" value="500"/>
+			</item>
+			<item name="modCrownBatSchematic">
+				<property name="Extends" value="schematicMaster"/>
+				<property name="CustomIcon" value="schematicMaster" />
+				<property name="DescriptionKey" value="schematicMaster2Desc"/>
+				<property name="EconomicValue" value="500"/>
+			</item>
+			<item name="modNautilusBatSchematic">
+				<property name="Extends" value="schematicMaster"/>
+				<property name="CustomIcon" value="schematicMaster" />
+				<property name="DescriptionKey" value="schematicMaster2Desc"/>
+				<property name="EconomicValue" value="500"/>
+			</item>
+			<item name="modBarbedBatSchematic">
+				<property name="Extends" value="schematicMaster"/>
+				<property name="CustomIcon" value="schematicMaster" />
+				<property name="DescriptionKey" value="schematicMaster2Desc"/>
+				<property name="EconomicValue" value="500"/>
 			</item>			
-<!--		<item name="sawBlade">
-				<property name="Material" value="Msteel"/>
-				<property name="HoldType" value="31"/>
-				<property name="Stacknumber" value="50"/> 
-				<property name="Weight" value="20"/>
-				<property name="EconomicValue" value="50"/>
-				<property name="Group" value="Resources"/>
-				<property name="Meshfile" value="#@modfolder:Resources/SawBlade.unity3d?SawBladePrefab" />
-				<property name="CustomIcon" value="sawBlade" />
-			</item> -->
+			<item name="modAxeBatSchematic">
+				<property name="Extends" value="schematicMaster"/>
+				<property name="CustomIcon" value="schematicMaster" />
+				<property name="DescriptionKey" value="schematicMaster2Desc"/>
+				<property name="EconomicValue" value="500"/>
+			</item>
+			<item name="modMaceBatSchematic">
+				<property name="Extends" value="schematicMaster"/>
+				<property name="CustomIcon" value="schematicMaster" />
+				<property name="DescriptionKey" value="schematicMaster2Desc"/>
+				<property name="EconomicValue" value="500"/>
+			</item>
+			<item name="modKanaboBatSchematic">
+				<property name="Extends" value="schematicMaster"/>
+				<property name="DescriptionKey" value="schematicMaster2Desc"/>
+				<property name="CustomIcon" value="schematicMaster" />
+				<property name="EconomicValue" value="500"/>
+			</item>			
+			<item name="modNailedBatSchematic">
+				<property name="Extends" value="schematicMaster"/>
+				<property name="CustomIcon" value="schematicMaster" />
+				<property name="DescriptionKey" value="schematicMaster2Desc"/>
+				<property name="EconomicValue" value="500"/>
+			</item>
+			<item name="modSmallGearBatSchematic">
+				<property name="Extends" value="schematicMaster"/>
+				<property name="CustomIcon" value="schematicMaster" />
+				<property name="DescriptionKey" value="schematicMaster2Desc"/>
+				<property name="EconomicValue" value="500"/>
+			</item>
+			<item name="modSpeedBallBatSchematic">
+				<property name="Extends" value="schematicMaster"/>
+				<property name="CustomIcon" value="schematicMaster" />
+				<property name="DescriptionKey" value="schematicMaster2Desc"/>
+				<property name="EconomicValue" value="500"/>
+			</item>
+			<item name="modWeightGearBatSchematic">
+				<property name="Extends" value="schematicMaster"/>
+				<property name="CustomIcon" value="schematicMaster" />
+				<property name="DescriptionKey" value="schematicMaster2Desc"/>
+				<property name="EconomicValue" value="500"/>
+			</item>
+			<item name="modBurningBatSchematic">
+				<property name="Extends" value="schematicMaster"/>
+				<property name="CustomIcon" value="schematicMaster" />
+				<property name="DescriptionKey" value="schematicMaster2Desc"/>
+				<property name="EconomicValue" value="500"/>
+			</item>	
+			<item name="modSparkyBatSchematic">
+				<property name="Extends" value="schematicMaster"/>
+				<property name="CustomIcon" value="schematicMaster" />
+				<property name="DescriptionKey" value="schematicMaster2Desc"/>
+				<property name="EconomicValue" value="500"/>
+			</item>
+			<item name="modGripRubberBatSchematic">
+				<property name="Extends" value="schematicMaster"/>
+				<property name="CustomIcon" value="schematicMaster" />
+				<property name="DescriptionKey" value="schematicMaster2Desc"/>
+				<property name="EconomicValue" value="500"/>
+			</item>
+			<item name="modGripLeatherBatSchematic">
+				<property name="Extends" value="schematicMaster"/>
+				<property name="CustomIcon" value="schematicMaster" />
+				<property name="DescriptionKey" value="schematicMaster2Desc"/>
+				<property name="EconomicValue" value="500"/>
+			</item>
+			<item name="modPommelHoundBatSchematic">
+				<property name="Extends" value="schematicMaster"/>
+				<property name="CustomIcon" value="schematicMaster" />
+				<property name="DescriptionKey" value="schematicMaster2Desc"/>
+				<property name="EconomicValue" value="500"/>
+			</item>	
+			<item name="modPommelPantherBatSchematic">
+				<property name="Extends" value="schematicMaster"/>
+				<property name="CustomIcon" value="schematicMaster" />
+				<property name="DescriptionKey" value="schematicMaster2Desc"/>
+				<property name="EconomicValue" value="500"/>
+			</item>
+			<item name="SalvagedLatheSchematic">
+				<property name="Extends" value="schematicMaster"/>
+				<property name="CustomIcon" value="schematicMaster" />
+				<property name="DescriptionKey" value="schematicMaster2Desc"/>
+				<property name="EconomicValue" value="500"/>
+			</item>
+			<item name="meleeWoodBatSchematic">
+				<property name="Extends" value="schematicMaster"/>
+				<property name="CustomIcon" value="schematicMaster" />
+				<property name="DescriptionKey" value="schematicMaster2Desc"/>
+				<property name="EconomicValue" value="500"/>
+			</item>
 		</append>
 </configs>
