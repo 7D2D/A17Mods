@@ -1,6 +1,6 @@
 <configs>
 	<append xpath="/recipes" >
-		<recipe name="modBeanCanBat" count="1" craft_area="workbench" >
+		<recipe name="modBeanCanBat" count="1" craft_area="workbench" tags="learnable">
 			<ingredient name="modBeanCanBatSchematic" count="1"/>
 			<ingredient name="drinkCanEmpty" count="1"/>
 			<ingredient name="resourceMechanicalParts" count="5"/>

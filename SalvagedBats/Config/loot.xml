@@ -40,6 +40,7 @@
 			<item name="modNailedBatSchematic"/>
 			<item name="modSmallGearBatSchematic"/>
 			<item name="modPommelPantherBatSchematic"/>	
+			<item name="meleeWoodBatSchematic"/>
 	</append>
 	<append xpath="/lootcontainers/lootgroup[@name='rareBooks']">
 			<item name="modCrownBatSchematic"/>
@@ -54,7 +55,8 @@
 			<item name="modBurningBatSchematic"/>
 			<item name="modSparkyBatSchematic"/>					
 			<item name="modPommelHoundBatSchematic"/>
-			<item name="modGripRubberBatSchematic"/>				
+			<item name="modGripRubberBatSchematic"/>
+			<item name="SalvagedLatheSchematic"/>
 	</append>	
 	
 	<append xpath="/lootcontainers/lootgroup[@name='weaponsMelee']">
