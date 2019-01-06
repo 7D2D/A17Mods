@@ -1,4 +1,12 @@
 <configs>
+
+	<!-- Flag model by s.probka is licensed under CC Attribution  -->
+	<!-- <set xpath="/blocks/block[@name='questRallyMarker']/property[@name='Model']/@value">#@modfolder:Resources/RallyFlags.unity3d?rallypointSphereII_X</set> -->
+	<!--	 <set xpath="/blocks/block[@name='questRallyMarker']/property[@name='Model']/@value">#@modfolder:Resources/RallyFlags.unity3d?rallypointRally_X</set>	-->
+	<!-- <set xpath="/blocks/block[@name='questRallyMarker']/property[@name='Model']/@value">#@modfolder:Resources/RallyFlags.unity3d?rallypoint7Days_X</set> -->
+	<set xpath="/blocks/block[@name='questRallyMarker']/property[@name='Model']/@value">#@modfolder:Resources/RallyFlags.unity3d?rallypointWarning_X </set> 
+	<!-- <set xpath="/blocks/block[@name='questRallyMarker']/property[@name='Model']/@value">#@modfolder:Resources/RallyFlags.unity3d?rallypointCaution_X</set> -->
+
 	<append xpath="/blocks">	
 		<block name="FlagUSA">
 			<property name="Material" value="Mmetal"/>
