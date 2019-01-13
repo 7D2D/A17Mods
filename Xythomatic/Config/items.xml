@@ -1,0 +1,49 @@
+<configs>
+	<append xpath="/items">	
+		<item name="Xythomatic">
+			<property name="DescriptionKey" value="toysDesc" />
+			<property name="Meshfile" value="#@modfolder:Resources/Cam.unity3d?Xray_X" /> 
+			<!-- Dynamo handheld flashlight by SuperMopsek is licensed under CC Attribution -->
+			<property name="Stacknumber" value="1" />	
+			<property name="Tags" value="blunt,melee,tool"/>
+			<property name="CustomIcon" value="Xythomatic" />
+			<property name="DisplayType" value="melee"/>
+			<property name="HoldType" value="13"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Cams.unity3d?Xray_X" /> 
+			<property name="Material" value="MelectricParts"/> <property name="Weight" value="5"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="ItemNeedsRepair"/>
+			<property name="EconomicValue" value="100"/>
+			<property name="DropScale" value="1.5"/>
+			<property class="Action0">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Sphere" value="0.1"/>
+				<property name="Sound_start" value="swoosh"/>
+				<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+			</property>
+				<property class="Action1">
+				<property name="Class" value="Eat"/>
+				<property name="Consume" value="false"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="turret_windup"/>
+			</property> 
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="MaxRange" operation="base_set" value="2.0"/>
+				<passive_effect name="BlockRange" operation="base_set" value="2.5"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="12"/> <!-- meleeToolFlashlight02 -->
+				<passive_effect name="BlockDamage" operation="base_set" value="4"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
+				<passive_effect name="HarvestCount" operation="base_set" value="0" tags="allToolsHarvest"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="65"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="12.1" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="125,250" tier="1,6"/>
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+			</effect_group>			
+		</item> 			
+	</append>
+</configs>

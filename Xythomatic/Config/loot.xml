@@ -1,0 +1,5 @@
+<configs>
+	<append xpath="/lootcontainers/lootgroup[@name='rareTools']">
+		<item name="Xythomatic" loot_prob_template="probTemplate1.0"/>
+	</append>	
+</configs> 
