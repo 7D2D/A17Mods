@@ -2,14 +2,13 @@
 	<append xpath="/items">	
 		<item name="Xythomatic">
 			<property name="DescriptionKey" value="toysDesc" />
-			<property name="Meshfile" value="#@modfolder:Resources/Cam.unity3d?Xray_X" /> 
+			<property name="Meshfile" value="#@modfolder:Resources/Cams.unity3d?Xray_X" /> 
 			<!-- Dynamo handheld flashlight by SuperMopsek is licensed under CC Attribution -->
 			<property name="Stacknumber" value="1" />	
 			<property name="Tags" value="blunt,melee,tool"/>
 			<property name="CustomIcon" value="Xythomatic" />
 			<property name="DisplayType" value="melee"/>
 			<property name="HoldType" value="13"/>
-			<property name="Meshfile" value="#@modfolder:Resources/Cams.unity3d?Xray_X" /> 
 			<property name="Material" value="MelectricParts"/> <property name="Weight" value="5"/>
 			<property name="RepairTools" value="resourceRepairKit"/>
 			<property name="DegradationBreaksAfter" value="false"/>
