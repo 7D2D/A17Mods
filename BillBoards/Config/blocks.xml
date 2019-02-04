@@ -34,7 +34,7 @@
 			<property name="Model" value="#@modfolder:Resources/BillBoards.unity3d?BillboardVideoMP4_X" /> <!-- Free model by stepanprokop -->
 			<property name="Class" value="Switch"/>		
             <property name="DisplayType" value="blockElectrical" />
-            <property name="RequiredPower" value="1"/>
+            <property name="RequiredPower" value="0"/>
             <property name="CreativeMode" value="Player"/>
 			<property name="TriggerType" value="Switch"/> 
 			<property name="CustomIcon" value="Billboard" />
@@ -62,7 +62,7 @@
 			<property name="Model" value="#@modfolder:Resources/BillBoards.unity3d?BillboardVideoURL_X" /> <!-- Free model by stepanprokop -->
 			<property name="Class" value="Switch"/>		
             <property name="DisplayType" value="blockElectrical" />
-            <property name="RequiredPower" value="1"/>
+            <property name="RequiredPower" value="0"/>
             <property name="CreativeMode" value="Player"/>
 			<property name="TriggerType" value="Switch"/> 
 			<property name="CustomIcon" value="Billboard" />
@@ -90,7 +90,7 @@
 			<property name="Model" value="#@modfolder:Resources/BillBoards.unity3d?BillboardVideoOGV_X" /> 
 			<property name="Class" value="Switch"/>		
             <property name="DisplayType" value="blockElectrical" />
-            <property name="RequiredPower" value="1"/>
+            <property name="RequiredPower" value="0"/>
             <property name="CreativeMode" value="Player"/>
 			<property name="TriggerType" value="Switch"/> 
 			<property name="CustomIcon" value="Billboard" />
@@ -118,7 +118,7 @@
 			<property name="Model" value="#@modfolder:Resources/BillBoards.unity3d?BillboardVideo_X" /> 
 			<property name="Class" value="Switch"/>		
             <property name="DisplayType" value="blockElectrical" />
-            <property name="RequiredPower" value="1"/>
+            <property name="RequiredPower" value="0"/>
             <property name="CreativeMode" value="Player"/>
 			<property name="TriggerType" value="Switch"/> 
 			<property name="CustomIcon" value="Billboard" />
