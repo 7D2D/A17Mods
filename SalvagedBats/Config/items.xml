@@ -121,115 +121,115 @@
 			</item>	
 			<item name="modBeanCanBatSchematic">
 				<property name="Extends" value="schematicMaster"/>
-				<property name="CustomIcon" value="schematicMaster" />
+				<property name="CustomIcon" value="modBeanCanBatSchematic" />
 				<property name="DescriptionKey" value="schematicMaster2Desc"/>
 				<property name="EconomicValue" value="500"/>
 			</item>
 			<item name="modCrownBatSchematic">
 				<property name="Extends" value="schematicMaster"/>
-				<property name="CustomIcon" value="schematicMaster" />
+				<property name="CustomIcon" value="modCrownBatSchematic" />
 				<property name="DescriptionKey" value="schematicMaster2Desc"/>
 				<property name="EconomicValue" value="500"/>
 			</item>
 			<item name="modNautilusBatSchematic">
 				<property name="Extends" value="schematicMaster"/>
-				<property name="CustomIcon" value="schematicMaster" />
+				<property name="CustomIcon" value="modNautilusBatSchematic" />
 				<property name="DescriptionKey" value="schematicMaster2Desc"/>
 				<property name="EconomicValue" value="500"/>
 			</item>
 			<item name="modBarbedBatSchematic">
 				<property name="Extends" value="schematicMaster"/>
-				<property name="CustomIcon" value="schematicMaster" />
+				<property name="CustomIcon" value="modBarbedBatSchematic" />
 				<property name="DescriptionKey" value="schematicMaster2Desc"/>
 				<property name="EconomicValue" value="500"/>
 			</item>			
 			<item name="modAxeBatSchematic">
 				<property name="Extends" value="schematicMaster"/>
-				<property name="CustomIcon" value="schematicMaster" />
+				<property name="CustomIcon" value="modAxeBatSchematic" />
 				<property name="DescriptionKey" value="schematicMaster2Desc"/>
 				<property name="EconomicValue" value="500"/>
 			</item>
 			<item name="modMaceBatSchematic">
 				<property name="Extends" value="schematicMaster"/>
-				<property name="CustomIcon" value="schematicMaster" />
+				<property name="CustomIcon" value="modMaceBatSchematic" />
 				<property name="DescriptionKey" value="schematicMaster2Desc"/>
 				<property name="EconomicValue" value="500"/>
 			</item>
 			<item name="modKanaboBatSchematic">
 				<property name="Extends" value="schematicMaster"/>
 				<property name="DescriptionKey" value="schematicMaster2Desc"/>
-				<property name="CustomIcon" value="schematicMaster" />
+				<property name="CustomIcon" value="modKanaboBatSchematic" />
 				<property name="EconomicValue" value="500"/>
 			</item>			
 			<item name="modNailedBatSchematic">
 				<property name="Extends" value="schematicMaster"/>
-				<property name="CustomIcon" value="schematicMaster" />
+				<property name="CustomIcon" value="modNailedBatSchematic" />
 				<property name="DescriptionKey" value="schematicMaster2Desc"/>
 				<property name="EconomicValue" value="500"/>
 			</item>
 			<item name="modSmallGearBatSchematic">
 				<property name="Extends" value="schematicMaster"/>
-				<property name="CustomIcon" value="schematicMaster" />
+				<property name="CustomIcon" value="modSmallGearBatSchematic" />
 				<property name="DescriptionKey" value="schematicMaster2Desc"/>
 				<property name="EconomicValue" value="500"/>
 			</item>
 			<item name="modSpeedBallBatSchematic">
 				<property name="Extends" value="schematicMaster"/>
-				<property name="CustomIcon" value="schematicMaster" />
+				<property name="CustomIcon" value="modSpeedBallBatSchematic" />
 				<property name="DescriptionKey" value="schematicMaster2Desc"/>
 				<property name="EconomicValue" value="500"/>
 			</item>
 			<item name="modWeightGearBatSchematic">
 				<property name="Extends" value="schematicMaster"/>
-				<property name="CustomIcon" value="schematicMaster" />
+				<property name="CustomIcon" value="modWeightGearBatSchematic" />
 				<property name="DescriptionKey" value="schematicMaster2Desc"/>
 				<property name="EconomicValue" value="500"/>
 			</item>
 			<item name="modBurningBatSchematic">
 				<property name="Extends" value="schematicMaster"/>
-				<property name="CustomIcon" value="schematicMaster" />
+				<property name="CustomIcon" value="modBurningBatSchematic" />
 				<property name="DescriptionKey" value="schematicMaster2Desc"/>
 				<property name="EconomicValue" value="500"/>
 			</item>	
 			<item name="modSparkyBatSchematic">
 				<property name="Extends" value="schematicMaster"/>
-				<property name="CustomIcon" value="schematicMaster" />
+				<property name="CustomIcon" value="modSparkyBatSchematic" />
 				<property name="DescriptionKey" value="schematicMaster2Desc"/>
 				<property name="EconomicValue" value="500"/>
 			</item>
 			<item name="modGripRubberBatSchematic">
 				<property name="Extends" value="schematicMaster"/>
-				<property name="CustomIcon" value="schematicMaster" />
+				<property name="CustomIcon" value="modGripRubberBatSchematic" />
 				<property name="DescriptionKey" value="schematicMaster2Desc"/>
 				<property name="EconomicValue" value="500"/>
 			</item>
 			<item name="modGripLeatherBatSchematic">
 				<property name="Extends" value="schematicMaster"/>
-				<property name="CustomIcon" value="schematicMaster" />
+				<property name="CustomIcon" value="modGripLeatherBatSchematic" />
 				<property name="DescriptionKey" value="schematicMaster2Desc"/>
 				<property name="EconomicValue" value="500"/>
 			</item>
 			<item name="modPommelHoundBatSchematic">
 				<property name="Extends" value="schematicMaster"/>
-				<property name="CustomIcon" value="schematicMaster" />
+				<property name="CustomIcon" value="modPommelHoundBatSchematic" />
 				<property name="DescriptionKey" value="schematicMaster2Desc"/>
 				<property name="EconomicValue" value="500"/>
 			</item>	
 			<item name="modPommelPantherBatSchematic">
 				<property name="Extends" value="schematicMaster"/>
-				<property name="CustomIcon" value="schematicMaster" />
+				<property name="CustomIcon" value="modPommelPantherBatSchematic" />
 				<property name="DescriptionKey" value="schematicMaster2Desc"/>
 				<property name="EconomicValue" value="500"/>
 			</item>
 			<item name="SalvagedLatheSchematic">
 				<property name="Extends" value="schematicMaster"/>
-				<property name="CustomIcon" value="schematicMaster" />
+				<property name="CustomIcon" value="SalvagedLatheSchematic" />
 				<property name="DescriptionKey" value="schematicMaster2Desc"/>
 				<property name="EconomicValue" value="500"/>
 			</item>
 			<item name="meleeWoodBatSchematic">
 				<property name="Extends" value="schematicMaster"/>
-				<property name="CustomIcon" value="schematicMaster" />
+				<property name="CustomIcon" value="meleeWoodBatSchematic" />
 				<property name="DescriptionKey" value="schematicMaster2Desc"/>
 				<property name="EconomicValue" value="500"/>
 			</item>
