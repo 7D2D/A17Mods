@@ -1,0 +1,55 @@
+<configs>
+	<append xpath="/blocks">	
+		<block name="VideoTV"> 
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/VideoTVs.unity3d?VideoTV_X" />  <!-- Video Player TV Model by VX-Designs is licensed under CC Attribution -->
+			<property name="Class" value="Switch"/>		
+            <property name="DisplayType" value="blockElectrical" />
+            <property name="RequiredPower" value="0"/>
+            <property name="CreativeMode" value="Player"/>
+			<property name="TriggerType" value="Switch"/> 
+			<property name="CustomIcon" value="VideoPlayer" />
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="EconomicValue" value="2000"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/> 
+			<drop event="Destroy" name="resourceScrapIron" count="5" prob="1"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+		</block>
+		<block name="TVWall"> 
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/VideoTVs.unity3d?TVWall_X" />  <!-- Video Player TV Model by GameSpace is licensed under CC Attribution -->
+			<property name="Class" value="Switch"/>		
+            <property name="DisplayType" value="blockElectrical" />
+            <property name="RequiredPower" value="0"/>
+            <property name="CreativeMode" value="Player"/>
+			<property name="TriggerType" value="Switch"/> 
+			<property name="CustomIcon" value="TVWall" />
+			<property name="Material" value="Mmetal_medium"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="EconomicValue" value="2000"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/> 
+			<drop event="Destroy" name="resourceScrapIron" count="5" prob="1"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+<!--	<effect_group>
+				<requirement name="HasBuff" buff="buffTeslaDC"/>  
+				<triggered_effect trigger="onSelfBuffUpdate" action="LogMessage" message="Im blockpowered!"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AnimatorSetBool" target="self" property="IsDCOn" value="true"/> 
+			</effect_group>	-->
+		</block>	
+	</append>
+</configs>
