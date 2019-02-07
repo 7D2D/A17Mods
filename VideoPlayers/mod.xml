@@ -1,10 +1,10 @@
 <mod>
 	<info>
 		<author>Xyth</author>
-		<name>Xyth VideoPlayers</name>
+		<name>VideoPlayers</name>
 		<description>VideoPlayers</description>
-		<mod_version>1.01</mod_version>
-		<game_version>17.0</game_version>
+		<mod_version>1.02</mod_version>
+		<game_version>17.1</game_version>
 		<launcher_version>0.7.3</launcher_version>
 	</info>
 </mod>

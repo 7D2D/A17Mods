@@ -1,10 +1,10 @@
 <mod>
 	<info>
 		<author>Xyth</author>
-		<name>Xyth BillBoards</name>
+		<name>BillBoards</name>
 		<description>Large Automated Billboards</description>
 		<mod_version>1.01</mod_version>
-		<game_version>17.0</game_version>
+		<game_version>17.1</game_version>
 		<launcher_version>0.7.3</launcher_version>
 	</info>
 </mod>

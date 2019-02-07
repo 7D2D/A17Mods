@@ -2,9 +2,9 @@
 
 <xml>
 	<ModInfo>
-		<Name value="Xyth VideoPlayers" />
+		<Name value="VideoPlayers" />
 		<Description value="VideoPlayers." />
 		<Author value="Xyth" />
-		<Version value="1.01" />
+		<Version value="1.02" />
 	</ModInfo>
 </xml>
