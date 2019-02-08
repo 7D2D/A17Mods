@@ -1,0 +1,11 @@
+<configs>
+	<append xpath="/recipes" >
+		<recipe name="TheaterScreen" count="1" craft_area="workbench" >
+			<ingredient name="resourceMechanicalParts" count="10"/>
+			<ingredient name="resourceElectricParts" count="12"/>
+			<ingredient name="glassBusinessSheet" count="10"/>
+			<ingredient name="solarCell" count="2"/>
+			<ingredient name="carBattery" count="2"/>
+		</recipe>
+	</append>
+</configs>
