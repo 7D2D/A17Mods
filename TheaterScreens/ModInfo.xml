@@ -2,9 +2,9 @@
 
 <xml>
 	<ModInfo>
-		<Name value="Theater Screens" />
-		<Description value="Theater Screens" />
+		<Name value="TheaterScreens" />
+		<Description value="TheaterScreens" />
 		<Author value="Xyth" />
-		<Version value="1.0" />
+		<Version value="1.01" />
 	</ModInfo>
 </xml>
