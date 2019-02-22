@@ -77,6 +77,7 @@
 			<property name="Model" value="#@modfolder:Resources/CCTV.unity3d?CamPan0_X" />
 			<property name="CustomIcon" value="Cam0" />
 			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Stacknumber" value="1"/>
 		</block>
 		<block name="CamPan1">
 			<property name="Material" value="Mmetal"/>
@@ -101,6 +102,7 @@
 			<property name="Model" value="#@modfolder:Resources/CCTV.unity3d?CamPan1_X" />
 			<property name="CustomIcon" value="Cam1" />
 			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Stacknumber" value="1"/>
 		</block>
 		<block name="CamPan2">
 			<property name="Material" value="Mmetal"/>
@@ -125,6 +127,7 @@
 			<property name="Model" value="#@modfolder:Resources/CCTV.unity3d?CamPan2_X" />
 			<property name="CustomIcon" value="Cam2" />
 			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Stacknumber" value="1"/>
 		</block>
 		<block name="CamPan3">
 			<property name="Material" value="Mmetal"/>
@@ -149,6 +152,7 @@
 			<property name="Model" value="#@modfolder:Resources/CCTV.unity3d?CamPan3_X" />
 			<property name="CustomIcon" value="Cam3" />
 			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Stacknumber" value="1"/>
 		</block>
 		<block name="CamPan4">
 			<property name="Material" value="Mmetal"/>
@@ -173,6 +177,7 @@
 			<property name="Model" value="#@modfolder:Resources/CCTV.unity3d?CamPan4_X" />
 			<property name="CustomIcon" value="Cam4" />
 			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Stacknumber" value="1"/>
 		</block>	
 		<block name="CamPan5">
 			<property name="Material" value="Mmetal"/>
@@ -197,6 +202,7 @@
 			<property name="Model" value="#@modfolder:Resources/CCTV.unity3d?CamPan5_X" />
 			<property name="CustomIcon" value="Cam5" />
 			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Stacknumber" value="1"/>
 		</block>	
 		<block name="CamPan6">
 			<property name="Material" value="Mmetal"/>
@@ -221,6 +227,7 @@
 			<property name="Model" value="#@modfolder:Resources/CCTV.unity3d?CamPan6_X" />
 			<property name="CustomIcon" value="Cam6" />
 			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Stacknumber" value="1"/>
 		</block>	
 		<block name="CamPan7">
 			<property name="Material" value="Mmetal"/>
@@ -245,7 +252,7 @@
 			<property name="Model" value="#@modfolder:Resources/CCTV.unity3d?CamPan7_X" />
 			<property name="CustomIcon" value="Cam7" />
 			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Stacknumber" value="1"/>
 		</block>			
-
 	</append>
 </configs>
