@@ -5,6 +5,6 @@
 		<Name value="CCTV" />
 		<Description value="Adds an 8 camera CCTV system to the game." />
 		<Author value="Xyth" />
-		<Version value="1.1" />
+		<Version value="1.11" />
 	</ModInfo>
 </xml>
