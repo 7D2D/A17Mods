@@ -168,7 +168,7 @@
 			</lootgroup>
 		</insertAfter>
 		<append xpath="/lootcontainers/lootgroup[@name='junk']">
-				<item group="itemJunk" />
+				<item group="itemJunk" count="1" prob="10.0"/>
 		</append>
 	
 </configs>
