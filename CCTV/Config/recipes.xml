@@ -60,5 +60,65 @@
 			<ingredient name="solarCell" count="1"/>
 			<ingredient name="carBattery" count="1"/>
 		</recipe>
+		<recipe name="CCTVLarge0-3" count="1" craft_area="workbench" >
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+			<ingredient name="glassBusinessSheet" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>	
+		<recipe name="CCTVLarge4-7" count="1" craft_area="workbench" >
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceElectricParts" count="10"/>
+			<ingredient name="glassBusinessSheet" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>			
+		<recipe name="CamPanSm0" count="1" craft_area="workbench" >
+			<ingredient name="resourceMechanicalParts" count="5"/>
+			<ingredient name="resourceElectricParts" count="5"/>
+			<ingredient name="solarCell" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>	
+		<recipe name="CamPanSm1" count="1" craft_area="workbench" >
+			<ingredient name="resourceMechanicalParts" count="5"/>
+			<ingredient name="resourceElectricParts" count="5"/>
+			<ingredient name="solarCell" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+		<recipe name="CamPanSm2" count="1" craft_area="workbench" >
+			<ingredient name="resourceMechanicalParts" count="5"/>
+			<ingredient name="resourceElectricParts" count="5"/>
+			<ingredient name="solarCell" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+		<recipe name="CamPanSm3" count="1" craft_area="workbench" >
+			<ingredient name="resourceMechanicalParts" count="5"/>
+			<ingredient name="resourceElectricParts" count="5"/>
+			<ingredient name="solarCell" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+		<recipe name="CamPanSm4" count="1" craft_area="workbench" >
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceElectricParts" count="1"/>
+			<ingredient name="solarCell" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+		<recipe name="CamPanSm5" count="1" craft_area="workbench" >
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceElectricParts" count="1"/>
+			<ingredient name="solarCell" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+		<recipe name="CamPanSm6" count="1" craft_area="workbench" >
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceElectricParts" count="1"/>
+			<ingredient name="solarCell" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>
+		<recipe name="CamPanSm7" count="1" craft_area="workbench" >
+			<ingredient name="resourceMechanicalParts" count="1"/>
+			<ingredient name="resourceElectricParts" count="1"/>
+			<ingredient name="solarCell" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe>		
 	</append>
 </configs>
