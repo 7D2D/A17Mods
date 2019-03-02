@@ -345,14 +345,14 @@
 			<property name="CustomIcon" value="ui_game_symbol_electronic3ds" />
 			<property name="DescriptionKey" value="electronic3dsDesc" />
 			<property name="Material" value="MelectronicParts" />
-			<property name="Weight" value="5" />
+			<property name="Weight" value="3" />
 		</item>
 		<item id="" name="electronicCellPhone">
 			<property name="Extends" value="itemMaster" />
 			<property name="CustomIcon" value="ui_game_symbol_electronicCellPhone" />
 			<property name="DescriptionKey" value="electronicCellPhoneDesc" />
 			<property name="Material" value="MelectronicParts" />
-			<property name="Weight" value="5" />
+			<property name="Weight" value="3" />
 		</item>
 		<item id="" name="electronicClockRadio">
 			<property name="Extends" value="itemMaster" />
@@ -366,7 +366,7 @@
 			<property name="Material" value="MelectronicParts" />
 			<property name="CustomIcon" value="ui_game_symbol_electronicBrokenIPod" />
 			<property name="DescriptionKey" value="electronicBrokenIPodDesc" />
-			<property name="Weight" value="5" />
+			<property name="Weight" value="3" />
 		</item>
 		<item id="" name="electronicBrokenIpad">
 			<property name="Extends" value="itemMaster" />
@@ -424,14 +424,14 @@
 			<property name="CustomIcon" value="ui_game_symbol_mechanicalKeyPad" />
 			<property name="DescriptionKey" value="mechanicalKeyPadDesc" />
 			<property name="Material" value="MmechanicalParts" />
-			<property name="Weight" value="3" />
+			<property name="Weight" value="5" />
 		</item>
 		<item id="" name="mechanicalOldWatch">
 			<property name="Extends" value="itemMaster" />
 			<property name="CustomIcon" value="ui_game_symbol_mechanicalOldWatch" />
 			<property name="DescriptionKey" value="mechanicalOldWatchDesc" />
 			<property name="Material" value="MmechanicalParts" />
-			<property name="Weight" value="3" />
+			<property name="Weight" value="5" />
 		</item>
 		<item id="" name="mechanicalTypeWriter">
 			<property name="Extends" value="itemMaster" />
