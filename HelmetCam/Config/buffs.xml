@@ -1,0 +1,27 @@
+<configs>
+<!-- This testes a custom particle as a buff with removal  (Confirmed working) -->
+
+	<append xpath="/buffs">
+		<buff name="HelmetCam" icon="#@modfolder:ItemIcons/ui_game_symbol_helmetcam.png" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/HelmetCam.unity3d?HelmetCam_X" local_offset="0,2.0,0" local_rotation="180,0,180"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveParticleEffectFromEntity" particle="#@modfolder:Resources/HelmetCam.unity3d?HelmetCam_X"/>
+			</effect_group>
+		</buff>	
+	</append>
+  <append xpath="/buffs/buff[@name='buffStatusCheck']/effect_group">	
+				<!-- Remove particle effect if not active, this is a backup removal for remote clients -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveParticleEffectFromEntity" particle="HelmetCam_X">
+				<requirement name="NotHasBuff" buff="HelmetCam"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="HelmetCam_X">
+				<requirement name="HasBuff" buff="HelmetCam"/>
+			</triggered_effect>
+	</append>
+	
+</configs>
+
+
+
