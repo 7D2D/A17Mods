@@ -1,0 +1,22 @@
+<configs>
+	<append xpath="/blocks">	
+
+		<block id="" name="steelBarsCentered">
+			<property name="Extends" value="ironBarsCentered"/>
+			<property name="Material" value="Msteel" />
+			<property name="StabilitySupport" value="true" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/SteelBars.unity3d?SteelBarsCentered_X"/>
+			<property name="Collide" value="melee,movement" />
+			<property name="StabilitySupport" value="true"/>
+			<property name="CustomIcon" value="steelBarsCentered" />
+			<property class="RepairItems"> <property name="resourceForgedSteel" value="10"/> </property>
+		</block>	
+		<block name="steelBars">
+			<property name="Extends" value="steelBarsCentered"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/SteelBars.unity3d?SteelBars_X"/> <!-- All models are free assets from Unity store by KrazyFX -->
+			<property name="CustomIcon" value="steelBars" />
+		</block>
+	</append>
+</configs>

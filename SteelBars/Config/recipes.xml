@@ -1,0 +1,14 @@
+<configs>
+	<append xpath="/recipes" >
+		<recipe name="steelBars" count="1" craft_area="forge" craft_tool="toolForgeCrucible" material_based="true">
+			<ingredient name="unit_iron" count="100" />
+			<ingredient name="unit_clay" count="20" />
+			<ingredient name="unit_lead" count="20" />
+		</recipe>
+		<recipe name="steelBarsCentered" count="1" craft_area="forge" craft_tool="toolForgeCrucible" material_based="true">
+			<ingredient name="unit_iron" count="100" />
+			<ingredient name="unit_clay" count="20" />
+			<ingredient name="unit_lead" count="20" />
+		</recipe>
+	</append>
+</configs>
