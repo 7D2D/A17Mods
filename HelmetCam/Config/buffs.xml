@@ -13,9 +13,6 @@
 			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveParticleEffectFromEntity" particle="HelmetCam_X">
 				<requirement name="NotHasBuff" buff="HelmetCam"/>
 			</triggered_effect>
-			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveParticleEffectFromEntity" particle="HelmetCam_X">
-				<requirement name="HasBuff" buff="buffCrouching"/>
-			</triggered_effect>			
 			<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="HelmetCam_X">
 				<requirement name="HasBuff" buff="HelmetCam"/>
 			</triggered_effect>
