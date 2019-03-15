@@ -1,7 +1,7 @@
 <configs>
 	<append xpath="/blocks">	
 
-		<block id="" name="steelBarsCentered">
+		<block name="steelBarsCentered">
 			<property name="Extends" value="ironBarsCentered"/>
 			<property name="Material" value="Msteel" />
 			<property name="StabilitySupport" value="true" />
