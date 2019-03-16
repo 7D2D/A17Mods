@@ -7,7 +7,7 @@
 			<property name="StabilitySupport" value="true" />
 			<property name="Shape" value="ModelEntity" />
 			<property name="Model" value="#@modfolder:Resources/SteelBars.unity3d?SteelBarsCentered_X"/>
-			<property name="Collide" value="melee,movement" />
+			<property name="Collide" value="melee,movement,rocket" />
 			<property name="StabilitySupport" value="true"/>
 			<property name="CustomIcon" value="steelBarsCentered" />
 			<property class="RepairItems"> <property name="resourceForgedSteel" value="10"/> </property>
