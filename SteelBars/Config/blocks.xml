@@ -30,7 +30,7 @@
 			<property class="RepairItems"> <property name="resourceScrapIron" value="10"/> </property>
 		</block>	
 		<block name="WroughtIronBars">
-			<property name="Extends" value="steelBarsCentered"/>
+			<property name="Extends" value="WroughtIronBarsCentered"/>
 			<property name="Shape" value="ModelEntity" />
 			<property name="Model" value="#@modfolder:Resources/SteelBars.unity3d?IronBars_X"/> <!-- All models are free assets from Unity store by KrazyFX -->
 			<property name="CustomIcon" value="wroughtIronBars" />
@@ -47,7 +47,7 @@
 			<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
 		</block>	
 		<block name="WoodDowelBars">
-			<property name="Extends" value="steelBarsCentered"/>
+			<property name="Extends" value="WoodDowelBarsCentered"/>
 			<property name="Shape" value="ModelEntity" />
 			<property name="Model" value="#@modfolder:Resources/SteelBars.unity3d?WoodBars_X"/> <!-- All models are free assets from Unity store by KrazyFX -->
 			<property name="CustomIcon" value="woodDowelBars" />
