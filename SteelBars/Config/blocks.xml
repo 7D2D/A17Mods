@@ -18,5 +18,39 @@
 			<property name="Model" value="#@modfolder:Resources/SteelBars.unity3d?SteelBars_X"/> <!-- All models are free assets from Unity store by KrazyFX -->
 			<property name="CustomIcon" value="steelBars" />
 		</block>
+		<block name="WroughtIronBarsCentered">
+			<property name="Extends" value="ironBarsCentered"/>
+			<property name="Material" value="Miron" />
+			<property name="StabilitySupport" value="true" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/SteelBars.unity3d?IronBarsCentered_X"/>
+			<property name="Collide" value="melee,movement,rocket" />
+			<property name="StabilitySupport" value="true"/>
+			<property name="CustomIcon" value="wroughtIronBarsCentered" />
+			<property class="RepairItems"> <property name="resourceScrapIron" value="10"/> </property>
+		</block>	
+		<block name="WroughtIronBars">
+			<property name="Extends" value="steelBarsCentered"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/SteelBars.unity3d?IronBars_X"/> <!-- All models are free assets from Unity store by KrazyFX -->
+			<property name="CustomIcon" value="wroughtIronBars" />
+		</block>
+		<block name="WoodDowelBarsCentered">
+			<property name="Extends" value="ironBarsCentered"/>
+			<property name="Material" value="Mwood" />
+			<property name="StabilitySupport" value="true" />
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/SteelBars.unity3d?WoodBarsCentered_X"/>
+			<property name="Collide" value="melee,movement,rocket" />
+			<property name="StabilitySupport" value="true"/>
+			<property name="CustomIcon" value="woodDowelBarsCentered" />
+			<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+		</block>	
+		<block name="WoodDowelBars">
+			<property name="Extends" value="steelBarsCentered"/>
+			<property name="Shape" value="ModelEntity" />
+			<property name="Model" value="#@modfolder:Resources/SteelBars.unity3d?WoodBars_X"/> <!-- All models are free assets from Unity store by KrazyFX -->
+			<property name="CustomIcon" value="woodDowelBars" />
+		</block>
 	</append>
 </configs>

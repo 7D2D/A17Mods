@@ -2,9 +2,9 @@
 <xml>
 	<ModInfo>
 		<Name value="SteelBars" />
-		<Description value="SteelBars" />
+		<Description value="Steel, wroughtIron and wood Bar blocks, top and centered, with looting area" />
 		<Author value="Xyth" />
-		<Version value="1.1" />
+		<Version value="1.2" />
 		<Website value="http://sdxmods.com" />
 	</ModInfo>
 </xml>
