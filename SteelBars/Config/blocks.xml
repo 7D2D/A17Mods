@@ -9,7 +9,7 @@
 			<property name="Collide" value="melee,movement,rocket" />
 			<property name="StabilitySupport" value="true"/>
 			<property name="CustomIcon" value="steelBarsCentered" />
-			<property name="MaxDamage" value="7000"/>
+			<property name="MaxDamage" value="6000"/>
 			<property class="RepairItems"> <property name="resourceForgedSteel" value="10"/> </property>
 			<property class="UpgradeBlock">
 				<property name="ToBlock" value="steelBarsCentered01"/>
@@ -100,7 +100,7 @@
 			<property name="StabilitySupport" value="true"/>
 			<property name="CustomIcon" value="steelBarsCentered" />
 			<property class="RepairItems"> <property name="resourceForgedSteel" value="10"/> </property>
-			<property name="MaxDamage" value="10000"/>
+			<property name="MaxDamage" value="8000"/>
 			<property name="DowngradeBlock" value="steelBarsCentered"/>
 		</block>
 		<block name="steelBars01">
