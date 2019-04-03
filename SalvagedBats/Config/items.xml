@@ -3,7 +3,7 @@
 		<append xpath="/items">	
 			<item name="meleeWoodBat">
 				<property name="Extends" value="meleeClubWood" />
-				<property name="Tags" value="bat,woodbat,melee,weapon,meleeWeapon,shaft,grip,head,pommel,sweetspot,notbraced"/>
+				<property name="Tags" value="bat,woodbat,melee,weapon,meleeWeapon,shaft,grip,head,pommel,sweetspot,notbraced,perkStayDown"/>
 				<property name="Meshfile" value="#@modfolder:Resources/salvagedbats.unity3d?PlainBat_X" /> <!-- CC 4.0 Licenced model by Gravity jack -->
 				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?PlainBat_X"/> 
 				<property name="CustomIcon" value="WoodBat" />
@@ -42,7 +42,7 @@
 			</item>
 			<item name="meleeAluminumBat">
 				<property name="Extends" value="meleeClubWood" />
-				<property name="Tags" value="bat,alumbat,melee,weapon,meleeWeapon,shaft,grip,head,pommel,sweetspot,notbraced"/>
+				<property name="Tags" value="bat,alumbat,melee,weapon,meleeWeapon,shaft,grip,head,pommel,sweetspot,notbraced,perkStayDown"/>
 				<property name="Meshfile" value="#@modfolder:Resources/salvagedbats.unity3d?AlumBat_X" /> <!-- CC 4.0 Licenced model by Gravity jack -->
 				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?AlumBat_X"/> 
 				<property name="CustomIcon" value="AlumBat" />
@@ -82,7 +82,7 @@
 	<!-- Legendary Items  -->		
 			<item name="MeleeBatLegendarySawBat">
 				<property name="Extends" value="meleeClubWood" />
-				<property name="Tags" value="melee,weapon,meleeWeapon,legendary"/>
+				<property name="Tags" value="melee,weapon,meleeWeapon,legendary,perkStayDown"/>
 				<property name="Meshfile" value="#@modfolder:Resources/salvagedbats.unity3d?SawBat_X" /> <!-- CC 4.0 Licenced model by  -->
 				<property name="HandMeshfile" value="#@modfolder:Resources/salvagedbats.unity3d?SawBat_X"/> 
 				<property name="CustomIcon" value="SawBat" />
