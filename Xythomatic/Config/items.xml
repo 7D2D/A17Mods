@@ -23,7 +23,7 @@
 			</property>
 				<property class="Action1">
 				<property name="Class" value="Eat"/>
-				<property name="Consume" value="false"/>
+				<property name="Consume" value="false"/> 
 				<property name="Use_time" value="..."/>
 				<property name="Sound_start" value="turret_windup"/>
 			</property> 
@@ -43,6 +43,6 @@
 				<passive_effect name="DegradationMax" operation="base_set" value="125,250" tier="1,6"/>
 				<passive_effect name="ModSlots" operation="base_set" value="0"/>
 			</effect_group>			
-		</item> 			
+		</item> 				
 	</append>
 </configs>
