@@ -147,12 +147,6 @@
 				<property name="Stacknumber" value="1"/>
 				<property name="PickupJournalEntry" value="augmentGunsTip"/>
 				<effect_group name="Adding Some Effects">
-					<passive_effect name="MaxRange" operation="base_add" value="0.2"/>
-					<passive_effect name="BlockRange" operation="base_add" value="0.1"/>
-					<passive_effect name="EntityDamage" operation="base_add" value="7"/> 
-					<passive_effect name="BlockDamage" operation="base_add" value="4"/>
-				</effect_group>					
-				<effect_group name="Adding Some Effects">
 					<passive_effect name="MaxRange" operation="base_add" value="0.3"/>
 					<passive_effect name="BlockRange" operation="base_add" value="0.3"/>
 					<passive_effect name="EntityDamage" operation="base_add" value="5"/> 
