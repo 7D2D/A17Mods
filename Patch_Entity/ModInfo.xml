@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Patch_Entity" />
+		<Description value="Patches error cause by custom entities dying with bleeding buff" />
+		<Author value="Xyth/Sphereii/Khaine" />
+		<Version value="1.0" />
+		<Website value="http://sdxmods.com" />
+	</ModInfo>
+</xml>

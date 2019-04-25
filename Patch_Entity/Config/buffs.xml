@@ -1,0 +1,9 @@
+<configs>
+		<!-- NRE Hack for bleeding effects on entities -->
+	<remove xpath="/buffs/buff[@name='buffInjuryBleeding']/effect_group">
+			<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffInjuryBleeding"/>
+	</remove>		
+	<append xpath="/buffs/buff[@name='buffStatusCheck']/effect_group">	
+		<triggered_effect trigger="onSelfRespawn" action="RemoveBuff" buff="buffInjuryBleeding"/>
+	</append>
+</configs>
